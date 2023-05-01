@@ -1,0 +1,488 @@
+.AdvertiseContainer{
+    opacity: 0.5;
+    background-color: #754b57;
+    position: fixed;
+    z-index: 9998;
+    height: 100vh;
+    width: 100vw;
+}
+.Advertise{
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    border: #9D8189 solid .2rem;
+    min-height: 30rem;
+    min-width: 30rem;
+    border-radius: .8rem;
+}
+
+.Advertise h1{
+    font-family: 'Montserrat-Medium';
+    font-weight: 500;
+    color: #754b57;
+    text-align: center;
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.CheckIcon{
+    display: block;
+    margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 4rem;
+}
+
+.AdvertiseButton1{
+    background-color: #F4ACB7;
+    color: white;
+    font-family: 'Montserrat-Regular';
+    font-weight: 900;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+    float: left;
+    margin-left: 15%;
+    width: 8rem;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.AdvertiseButton2{
+    background-color: #F4ACB7;
+    color: white;
+    font-family: 'Montserrat-Regular';
+    font-weight: 900;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+    float: right;
+    margin-right: 15%;
+    width: 8rem;
+    height: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.AdvertiseButton1:hover, .AdvertiseButton2:hover{
+    background-color: #ec7d8d;
+}
+
+.AdvertiseButton1:active, .AdvertiseButton2:active{
+    background-color: #c7b2a8;
+}
+
+.Back{
+    margin: auto 0;
+    display: inline-block;
+    margin-left: 2rem;
+    height: 4.4rem;
+    color: white;
+    background-color: #F4ACB7;
+    border: 0;
+    border-radius: .5rem;
+    width: 10%;
+    font-family:'Montserrat-ExtraBold';
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .2s;
+    line-height: 4.4rem;
+}
+
+
+.Back:hover{
+    background-color: #ec7d8d;
+}
+
+.Back:active{
+    background-color: #c7b2a8;
+}
+
+
+.BigTitle{
+    display: inline-block;
+    color: #754b57;
+    border: #754b57 solid .2rem;
+    width: fit-content;
+    font-family: 'Montserrat-ExtraBold';
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    margin-left: 23.4%;
+    padding: .6%;
+    border-radius: .9rem ;
+}
+
+.BigContainer{
+    z-index: 0;
+    border: solid #FFE5D9 2rem;
+    width: fit-content;
+    border-radius: 3rem;
+    height: fit-content;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.FormContainer{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.FormContainer > *:nth-last-child(2) {
+    margin-bottom: 2rem;
+}
+
+.FormContainer h2{
+    font-family: 'Montserrat-Medium';
+    font-weight: 900;
+    color: #9D8189;
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.FormContainer .Measure{
+    font-family: 'Montserrat-Regular';
+    font-weight: 400;
+    width: 13rem;
+    margin-left: 1rem;
+}
+
+.FormContainer .Titles{
+    padding-right: 14rem;
+}
+
+.FormContainer .TitleWeight{
+    padding-right: 13.8rem;
+}
+
+.ContainerTop{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 99%;
+    padding-left: 14rem;
+    padding-right: 13rem;
+}
+
+.BreedContainer{
+    height: auto;
+    width: 13.9rem;
+}
+
+.BreedContainer2{
+    height: auto;
+    width: fit-content;
+}
+
+.BreedContainer2 p{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat-Medium';
+    font-size: 1.4rem;
+    width: 18.87rem;
+    color: #d93025;
+    margin-top: 1rem;
+}
+
+.BreedContainer input, .BreedContainer2 input{
+    border: .1rem solid #9D8189;
+    height: 3rem;
+    width: 18.5rem;
+    font-size: 1.2rem;
+    padding-left: 4rem;
+}
+
+.BreedContainer input:focus, .BreedContainer2 input:focus{
+    caret-color: pink;
+}
+
+.BreedContainer label, .BreedContainer2 label{
+    font-size: 1.3rem;
+    width: 18.875rem;
+    display: block;
+    font-family: 'Montserrat-Medium';
+    color: white;
+    text-align: center;
+    background-color: #9D8189;
+    border-radius: .9rem .9rem 0 0;
+    cursor: pointer;
+    width: calc(18.79rem + 4rem);
+}
+
+.Search {
+    width: 13.9rem;
+}
+
+.BreedContainer p{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat-Medium';
+    font-size: 1.4rem;
+    width: 18.87rem;
+    color: #d93025;
+    margin-top: 1rem;
+}
+
+.AttributeContainer{
+    width: 100%;
+    padding-left: 14rem;
+}
+.ImageBreed{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+}
+
+.Image{
+    width: 6rem;
+    height: 6rem;
+}
+
+
+.Image.Ruler{
+    transform: rotate(45deg);
+}
+
+.OptionsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10.7%;
+}
+
+.InputContainer {
+    display: flex;
+    align-items: center;
+}
+.InputContainer input{
+    font-size: 1.2rem;
+    height: 3rem;
+    border: .1rem solid #9D8189;
+    padding-left: 4rem;
+}
+
+.InputContainer input:focus{
+    caret-color: pink ;
+}
+
+.InputContainer label{
+    font-size: 1.3rem;
+    font-family: 'Montserrat-Medium';
+    width: 3rem;
+    height: 3.3rem;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: .9rem 0 0 .9rem;
+    background-color: #9D8189;
+    cursor: pointer;
+}
+
+.Error{
+    font-family: 'Montserrat-Medium';
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: fit-content;
+    color: #d93025;
+    padding-right: 13%;
+}
+
+.ErrorLast{
+    font-family: 'Montserrat-Medium';
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: fit-content;
+    color: #d93025;
+    margin-bottom: 1rem;
+    padding-left: 20%;
+    margin-top: 1.5rem;
+}
+.TemperamentContainer h2{
+    margin-bottom: 1.5rem;
+}
+
+.Temperaments{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .7rem;
+}
+
+
+.TemperamentContainer p{
+    margin-top: 2rem;
+    padding-right: 0;
+    font-family: 'Montserrat-Medium';
+    font-weight: 500;
+    color: #d93025;
+}
+
+.Button{
+    font-family: 'Montserrat-ExtraBold';
+    color: #9D8189;
+    width: 7.9rem;
+    height: 2.3rem;
+    border: solid #9D8189 .1rem;
+    border-radius: .2rem;
+    background-color: white;
+    word-wrap: break-word;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.Button:hover, .Button.active{
+    background-color: #F4ACB7;
+    color: white;
+}
+
+.Button.active:hover{
+    background-color: #ec7d8d;
+}
+
+.Button.active:active{
+    background-color: #9D8189;
+}
+
+.Delete{
+    grid-column: span 2/ 13;
+    background-color: #F4ACB7;
+    color: white;
+    font-family: 'Montserrat-Regular';
+    font-weight: 900;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.Delete:hover{
+    background-color: #ec7d8d;
+}
+
+.Delete:active{
+    background-color: #9D8189;
+}
+
+.LockContainer{
+    display: flex;
+    padding-right: 2.5%;
+}
+
+.PadLock{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+.Allow{
+    display: none;
+}
+
+.SubmitContainer{
+    height: 4rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.Submit{
+    margin: auto auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+	cursor: pointer;
+	position: relative;
+	border-radius: 1rem;
+	font-size: 2rem;
+	font-weight: 600;
+	background-image: linear-gradient(-180deg, #f4acb7 0%, rgb(240, 115, 134) 100%);
+	box-shadow: 0 0 1.3rem .1rem #c7b2a8,
+							0 -0.25rem 1.5rem rgb(240, 115, 134) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
+    border: 0;
+    transition: .2s;
+    /* margin: auto 0;
+    height: 4rem;
+    color: #ffffff;
+    background-color: #F4ACB7;
+    border: 0;
+    border-radius: .5rem;
+    width: 20rem;
+    font-family:'Montserrat-ExtraBold';
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 10%; */
+}
+.Submit h3{
+    display: inline;
+    color: #ffffff;
+    font-family:'Montserrat-Bold';
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0;
+    transition: .2s;
+}
+.Submit:active{
+    width: 19rem;
+    height: 3.6rem;
+    box-shadow: 0 0 0 0 #c7b2a8,
+							0 -0.25rem 1.5rem rgb(240, 115, 134) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
+}
+
+.Submit:hover h3{
+    font-size: 1.8rem;
+}
+
+.Submit:hover{
+    background-color: #ec7d8d;
+    width: 18rem;
+    height: 3.6rem;
+}
+
+.Submit:disabled{
+    width: 20rem;
+    height: 4rem;
+    box-shadow: 0 0 1.3rem .1rem #c7b2a8,
+							0 -0.25rem 1.5rem rgb(240, 115, 134) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
+}
+
+.Submit:disabled h3{
+    font-size: 2rem;
+}
+
+.ErrorSubmit{
+    margin: 0 auto;
+}
+

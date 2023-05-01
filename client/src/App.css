@@ -1,0 +1,68 @@
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../../api/public/fonts/Montserrat-Regular.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face{
+    font-family: 'Montserrat-Light';
+    src: url('../../api/public/fonts/Montserrat-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../../api/public/fonts/Montserrat-ExtraBold.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../../api/public/fonts/Montserrat-Bold.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../../api/public/fonts/Montserrat-Medium.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  :root{
+    background-color: #fdfefd;
+  }
+
+  p {
+    font-family: 'Montserrat-Light';
+    text-decoration: none;
+  }
+  h2 {
+    font-family: 'Montserrat-Regular';
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  h3{
+    font-family: 'Montserrat-Light';
+    font-weight: 500;
+    color:#9D8189 ;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    text-decoration: none;
+  }
+
+  h4{
+    font-family: 'Montserrat-ExtraBold';
+    font-weight: 500;
+    color:#9D8189 ;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    text-decoration: none;
+  }

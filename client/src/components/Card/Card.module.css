@@ -1,0 +1,92 @@
+
+.Back{
+    width: fit-content;
+    height: fit-content;
+    border: solid #9D8189;
+}
+
+.Back a{
+    color: black;
+    text-decoration: none;
+}
+
+.CardOdd{
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 27rem;
+    min-height: 30rem;
+    border: .2rem solid #9D8189;
+    transform: rotate(8deg);
+    background-color: white;
+    transition: .8s;
+    
+}
+
+.CardOdd:hover{
+    transform: rotate(0deg);
+    border: 0 solid #9D8189;
+    border-bottom: 0 solid #9D8189;
+}
+
+.CardOdd img{
+    width: 24rem;
+    height: 20rem;
+}
+
+.CardEven{
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 27rem;
+    min-height: 30rem;
+    border: .2rem solid #9D8189;
+    transform: rotate(-8deg);
+    background-color: white;
+    transition: .9s;
+}
+.CardEven:hover{
+    transform: rotate(0deg);
+    border: 0 solid #9D8189;
+    border-bottom: 0 solid #9D8189;
+}
+.CardEven img{
+    width: 24rem;
+    height: 20rem;
+}
+
+.Image{
+    width: 26rem;
+    height: 20rem;
+}
+
+.Title{
+text-align: center;
+font-size: 2rem;
+margin: .6rem 0 .5rem 0;
+}
+
+.Weight{
+    text-align: right;
+    margin-right: 0;
+    font-size: large;
+}
+ .Attributes{
+    display: inline-block;
+    width: 26rem;
+    margin-bottom: auto;
+ }
+ .Attributes h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: .1rem;
+ }
+
+ .Temperament{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: .5rem;
+    margin-bottom: auto;
+
+ }
+

@@ -1,0 +1,198 @@
+.Dropmenu{
+    margin: 0;
+    padding: 1rem;
+    width: auto;
+    position: absolute;
+    z-index: 9999;
+    display: grid;
+    background-color: white;
+    gap: .7rem;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(14,1fr);
+    border: solid #9D8189 0.2rem;
+    border-radius: .8rem;
+    padding-bottom: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s;
+}
+
+
+.Description{
+    border-bottom:  #FFE5D9 .3rem solid;
+}
+
+.Description .EnableDescription{
+    border-bottom: #9D8189 .3rem solid;
+}
+
+.Dropmenu li{
+    transition-property: visibility;
+    transition-delay:  0s;
+}
+.TotalButtonContainer {
+    cursor: pointer;
+}
+.FilterImage{
+    width: 3.5rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    border: #FFE5D9 .2rem solid;
+    border-radius: .8rem;
+    padding: .1rem;
+}
+.FilterImage.EnableImg{
+    border: #9D8189 .2rem solid;
+    border-radius: .8rem;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+ul li:hover .Dropmenu{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(14,1fr);
+    height: auto;
+    width: auto;
+    gap: .7rem;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+} 
+
+.Button{
+    font-family: 'Montserrat-ExtraBold';
+    color: #9D8189;
+    width: 7.9rem;
+    height: 2.3rem;
+    border: solid #9D8189 .1rem;
+    border-radius: .2rem;
+    background-color: white;
+    word-wrap: break-word;
+    cursor: pointer;
+    transition: .2s;
+}
+.Button:hover, .Button.active{
+    background-color: #F4ACB7;
+    color: white;
+}
+
+.Button.active:hover{
+    background-color: #ec7d8d;
+}
+.Button.active:active{
+    background-color: #9D8189;
+}
+
+.active{
+    background-color: #F4ACB7;
+    color: white;
+}
+
+.Delete{
+    grid-column: span 2/ 10;
+    grid-row: 14;
+    background-color: #F4ACB7;
+    color: white;
+    font-family: 'Montserrat-Regular';
+    font-weight: 900;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.Delete:hover, .Done:hover{
+    background-color: #ec7d8d;
+}
+
+.Delete:active, .Done:active{
+    background-color: #9D8189;
+}
+
+.Done{
+    font-family: 'Montserrat-Regular';
+    font-weight: 900;
+    font-size: 1.5rem;
+    justify-self: center;
+    align-items: center;
+    grid-row: 15;
+    grid-column: 1/ span 9;
+    height: 2.3rem;
+    width: 26rem;
+    letter-spacing: .15rem;
+    background-color: #F4ACB7;
+    color: white;
+    border: 0;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Error{
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    background-color: white;
+    border: #9D8189 solid .2rem;
+    border-radius: .8rem;
+    min-height: 30rem;
+    min-width: 30rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.Error.ErrorActive{
+    visibility: visible;
+}
+
+.Remove{
+    margin-top: 5%;
+    margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+}
+
+.ErrorTitle{
+    text-align: center;
+    font-size: 2rem;
+    color: #754b57;
+    margin-bottom: 10%;
+}
+
+.Error button {
+    background-color: #F4ACB7;
+    color: white;
+    font-family: 'Montserrat-Regular';
+    font-weight: 900;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    float: left;
+    width: 8rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin-top: 15%;
+}
+
+.Error button:hover{
+    background-color: #ec7d8d;
+}
+
+.Error button:active{
+    background-color: #c7b2a8;
+}

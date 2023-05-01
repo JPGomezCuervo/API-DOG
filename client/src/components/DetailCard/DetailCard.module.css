@@ -1,0 +1,143 @@
+
+
+.BigContainer{
+    border: solid #FFE5D9 2rem;
+    border-radius: 3rem;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 1rem ;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.Title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.Title h2{
+
+    color: #9D8189;
+    font-family: 'Montserrat-Medium';
+    font-size: 3rem;
+}
+
+.TextTemperament{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.TextTemperament h3{
+    margin:auto 0;
+    width: 30rem;
+    text-align: start;
+    margin-left: 2rem;
+    
+}
+
+.Text{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.Text h3{
+    text-align: start;
+    margin: auto 0;
+    margin-left: 5rem;
+}
+
+.Container{
+    display: flex;
+    height: 60%;
+    gap: 7rem;
+}
+
+.AttributesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    height: 100%;
+}
+
+.RightSide{
+    margin-left: 4rem;
+}
+
+.TapeTop{
+    position: absolute;
+    width: 20rem;
+    height: 8.5rem;
+    top: -2.5rem;
+    left: -6rem;
+    transform: rotate(-12deg);
+}
+
+.TapeBottom{
+    position: absolute;
+    width: 20rem;
+    height: 8.5rem;
+    bottom: -2.5rem;
+    right: -7rem;
+    transform: rotate(-12deg);
+}
+.Card{
+    position: relative;
+    margin: 0;
+    padding-top: 2rem;
+    width: 30rem;
+    border: .2rem solid #9D8189;
+    transform: rotate(-10deg);
+    background-color: white;
+    margin-bottom: 4rem;
+    margin-left: 5rem;
+}
+
+.ImageDiv{
+    height:fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+
+.Image{
+    margin: 0 auto;
+    height: 22rem;
+    width: 28rem;
+}
+
+.Name{
+    text-align: center;
+    margin-top: 0;
+}
+
+.Id{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+
+
+.Button{
+    margin: auto 0;
+    margin-left: 5rem;
+    height: 4.4rem;
+    color: white;
+    background-color: #F4ACB7;
+    border: 0;
+    border-radius: .5rem;
+    width: 30%;
+    font-family:'Montserrat-ExtraBold';
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.Button:hover{
+    background-color: #ec7d8d;
+}
+
+.Icon{
+    height: 7rem;
+    width: 7rem;
+}

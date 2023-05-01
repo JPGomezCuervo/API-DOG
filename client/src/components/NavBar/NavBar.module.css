@@ -1,0 +1,139 @@
+.Header{
+    position: fixed;
+    z-index: 1;
+    background-color:#FFE5D9 ;
+    box-shadow: 0px 4px 10px 3px #00000040;
+    display: flex;
+    min-height: 5rem;
+    margin-bottom: 8rem;
+    padding-top: .6rem;
+    align-items: center;
+    padding-right: 2%;
+    width: 98vw;
+    
+}
+.LogoContainer{
+    border: 0;
+    background-color: #FFE5D9;
+    display: flex;
+    font-family: 'Montserrat-ExtraBold';
+    color: #5b4a4f;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.LogoContainer p{
+    position: absolute;
+    font-family: 'Montserrat-ExtraBold';
+    margin-top: 1.2rem;
+    margin-left: 2.7rem;
+    transform: rotate(-90deg);
+    font-size: 2rem;
+}
+
+.PawIcon{
+    height: 5rem;
+    transform: rotate(90deg);
+}
+
+.ButtonHeartContainer{
+    width: 12rem;
+    height: 4rem;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+.HeartContainer {
+    margin: auto auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    width: 12rem;
+    height: 4rem;
+    text-align: center;
+	cursor: pointer;
+	position: relative;
+	border-radius: 1rem;
+	font-size: 2rem;
+	font-weight: 600;
+	background-image: linear-gradient(-180deg, #f4acb7 0%, #f07386 100%);
+	box-shadow: 0 0 1.3rem .1rem #c7b2a8,
+							0 -0.25rem 1.5rem #f07386 inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
+    border: 0;
+    transition: .4s;
+}
+
+.HeartContainer h3{
+    display: inline;
+    color: #ffffff;
+    font-family:'Montserrat-Bold';
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0;
+    margin-right: .3rem;
+    transition: .4s;
+}
+.HeartContainer:hover .HeartIcon{
+    width: 1.8rem;
+}
+
+.HeartContainer:hover h3{
+    font-size: 1.6rem;
+}
+.HeartContainer:hover{
+    width: 11rem;
+    height: 3.6rem;
+    box-shadow: 0 0 0 0 #c7b2a8,
+							0 -0.25rem 1.5rem #f07386 inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
+}
+
+.HeartIcon{
+    display: inline-block;
+    width: 2.2rem;
+    cursor: pointer;
+    transition: .4s;
+    
+}
+
+.ButtonAddContainer{
+    width: 21rem;
+    height: 100%;
+}
+
+.Button{
+    margin: auto 0;
+    height: 4rem;
+    color: #ffffff;
+    background-color: #F4ACB7;
+    border: 0;
+    border-radius: .5rem;
+    width: 20rem;
+    font-family:'Montserrat-Bold';
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 10%;
+}
+.Button h3{
+    display: inline;
+    color: #ffffff;
+    font-family:'Montserrat-Bold';
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0;
+    transition: .4s;
+}
+
+.Button:hover{
+    background-color: #ec7d8d;
+}
+
+.Button:hover:active{
+    background-color: #9D8189;
+}

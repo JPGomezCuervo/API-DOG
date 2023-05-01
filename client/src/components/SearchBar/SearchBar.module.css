@@ -1,0 +1,86 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    height: 4rem;
+    width:100%;
+    margin: auto;
+}
+
+.InputContainer{
+    display: flex;
+    border-radius: .8rem;
+    width: fit-content;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: .9rem 0 0 .9rem;
+    background-color: white;
+    outline: white .2rem solid;
+}
+.InputContainer.Focus{
+    outline: pink .2rem solid;
+}
+
+.Input{
+    z-index: 1;
+    margin: auto 0;
+    font-family: 'Montserrat-Regular';
+    text-align: start;
+    outline: white .2rem solid;
+    height: 2rem;
+    width: 90%;
+    border: 0;
+    font-size: 1.6rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+
+}
+
+.Input:focus{
+    caret-color: pink ;
+    outline: 0
+}
+
+.Delete{
+    z-index: 2;
+    border: 0;
+    border-top: white .2rem solid;
+    border-bottom: white .2rem solid;
+    font-family: 'Montserrat-Regular';
+    height: 100%;
+    width: fit-content;
+    background-color: white;
+    line-height: 100%;
+    color: grey;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding-right: 5%;
+}
+
+.Button{
+    height: 100%;
+    width: 3.8rem;
+    background-color: #9D8189;
+    border-radius: 0 .9rem .9rem 0;
+    padding: 0;
+    margin: 0;
+    margin-left: .2rem;
+    border: 0;
+    cursor: pointer;
+    transition: .3s;
+    outline: #9D8189 .2rem solid;
+}
+
+
+.Button:hover{
+    background-color: #725e64;
+}
+
+.Lupa{
+    transform: scaleX(-1);
+    margin: auto auto;
+    height: 3rem;
+    width: 3rem;
+}

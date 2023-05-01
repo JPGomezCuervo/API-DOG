@@ -1,0 +1,112 @@
+
+.FilterImage{
+    width: 3.5rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: #FFE5D9 solid .2rem;
+    padding: .1rem;
+}
+
+.EnableImg.FilterImage{
+    border: #9D8189 .2rem solid;
+    border-radius: .8rem;
+}
+.TotalButtonContainer {
+    cursor: pointer;
+}
+
+.Dropmenu{
+    margin: 0;
+    padding: 1rem;
+    width: 10rem;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    background-color: white;
+    border: solid #9D8189 0.2rem;
+    flex-direction: column;
+    border-radius: .8rem;
+    gap: .4rem;
+}
+
+.Description{
+    text-align: center;
+    border-bottom: #FFE5D9 .3rem solid;
+}
+
+.EnableDescription.Description{
+    border-bottom: #9D8189 .3rem solid;
+}
+
+ul li:hover .Dropmenu{
+    display: flex;
+    gap: .4rem;
+    flex-direction: column;
+    
+}
+
+.PawIconUp{
+    display: inline;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    
+}
+
+
+.PawIconDown{
+    display: inline;
+    transform: scaleY(-1);
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    
+}
+
+.Button{
+    display: flex;
+    border: 0;
+    background-color: white;
+    align-items: center;
+    font-family: 'Montserrat-ExtraBold';
+    color: #9D8189;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.ListOption{
+    padding: .20rem;
+    border: solid white .15rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.ListOption.Pressed{
+    border: solid #9D8189 .15rem;
+    border-radius: .4em;
+}
+
+.ListOption:hover{
+    border: solid #9D8189 .15rem;
+    border-radius: .4em;
+}
+
+.ListOption2{
+    padding: .20rem;
+    border: solid white .15rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.ListOption2.Pressed{
+    border: solid #9D8189 .15rem;
+    border-radius: .4em;
+}
+
+.ListOption2:hover{
+    border: solid #9D8189 .15rem;
+    border-radius: .4em;
+}

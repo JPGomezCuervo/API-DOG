@@ -1,0 +1,61 @@
+
+.Container{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .6rem;
+    margin-top: 15%;
+}
+
+.Button{
+    background-color: #F4ACB7;
+    color: white;
+    border: 0;
+    transition: 0.5s;
+    border-radius: 3px;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium';
+    cursor: pointer;
+    visibility: visible;
+}
+
+.ButtonArrows{
+    background-color: #F4ACB7;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium';
+    cursor: pointer;
+    visibility: visible;
+}
+.ButtonArrows:hover{
+    background-color: #ec7d8d;
+}
+.ButtonArrows:active{
+    background-color: #9D8189;
+}
+
+.ButtonDisable{
+    visibility: hidden;
+}
+
+.Button:hover{
+    background-color: #ec7d8d;
+}
+.Button:active{
+    background-color: #9D8189;
+}
+
+.active:hover, .active:focus{
+    background-color: #ec7d8d;
+}
+
+.active{
+    background-color: #ec7d8d;
+}

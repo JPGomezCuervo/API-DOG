@@ -1,0 +1,80 @@
+.BackGround{
+    display: flex;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.LeftSide{
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10%;
+    
+}
+
+    .Canela{
+        width: 31rem;
+    }
+
+.RightSide{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.Container{
+    padding-right: 5%;
+}
+
+.Title{
+    font-family: 'Montserrat-Bold';
+    font-weight: 800;
+    letter-spacing: .1rem;
+    line-height: 8rem;
+    text-align: center;
+    width: 35rem;
+    font-size: 8rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.Description{
+    margin: 0 auto;
+    font-family: 'Montserrat-Medium';
+    color: grey;
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.Link{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.Button{
+    margin-top: 8rem;
+    height: 5rem;
+    color: #ffffff;
+    background-color: #F4ACB7;
+    border: 0;
+    border-radius: .5rem;
+    width: 20rem;
+    font-family:'Montserrat-Bold';
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 10%;
+}
+    .Button:hover{
+        background-color: #ec7d8d;
+    }
+
+    .Button:hover:active{
+        background-color: #9D8189;
+    }
+
+    .Starring{
+        margin: 0 auto;
+        margin-top: 21%;
+        width: 99%;
+    }
