@@ -203,8 +203,13 @@ ul li:hover .Dropmenu{
         width: 3rem;
     }
     .Dropmenu{
-        width: 10rem;
+        left: 0%;
     }
+    /* .Dropmenu {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(40,1fr);
+    } */
+    /* Arreglar con antonio */
     .ListOption.Pressed{
         border: #9D8189 solid .1rem;
     }
