@@ -60,12 +60,12 @@ const NavBar = () => {
                 <div className={style.ButtonHeartContainer}>
                     <button className={style.HeartContainer} onClick={handleClick}>
                         <img className={style.HeartIcon} src={darkHeartIcon} alt="" />
-                        <h3>Added</h3>
+                        Added
                     </button>
                 </div>
                 <Link to={'/form'}>
                     <div className={style.ButtonAddContainer}>
-                    <button className={style.Button} type='button'><h3>Add your doggy</h3></button>
+                    <button className={style.Button} type='button'>Add your doggy</button>
                     </div>
                 </Link>
 

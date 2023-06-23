@@ -218,3 +218,23 @@ ul li:hover .Dropmenu{
         border-radius: .4rem;
     }
 }
+
+@media screen and (min-width: 1366px) {
+    .FilterImage{
+        width: 3rem;
+    }
+    .Dropmenu{
+        width: 15rem;
+    }
+    .ListOption.Pressed{
+        border: #9D8189 solid .15rem;
+    }
+    .ListOption:hover{
+        border: solid #9D8189 .15rem;
+        border-radius: .4rem;
+    }   
+
+    .TotalButtonContainer h3 {
+        font-size: 1rem;
+    }
+}

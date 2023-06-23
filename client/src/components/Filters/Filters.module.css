@@ -62,3 +62,13 @@ ul{
     }
 
 }
+
+@media screen and (max-width: 1366px) {
+   .Container {
+    width: 20%;
+    margin-right: 10%;
+   }
+   .Filters {
+    width: 80%;
+   }
+}
