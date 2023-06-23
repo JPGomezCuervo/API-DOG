@@ -1,0 +1,62 @@
+.Container {
+    display: none;
+    width: 100%;
+    padding-top: 10vh;
+    background-color: #ffe5d9;
+    justify-content: space-evenly;
+}
+
+.ClearContainer{
+    cursor: pointer;
+    border: .2rem solid transparent;
+    padding: .1rem;
+    visibility: hidden;
+}
+
+.ClearContainerOn{
+    visibility: visible;
+}
+
+.ClearContainer h3{
+    border-bottom: .3rem solid transparent; 
+}
+
+
+.Order{
+    text-align: start;
+}
+.Filters{
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    gap: 3.5rem;
+    width: 100%;
+}
+
+.CleanContainer{
+    height: fit-content;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.ClearFilters{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: .5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.MobileContainer{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .Container {
+        display: flex;
+        flex-direction: row;
+    }
+}
