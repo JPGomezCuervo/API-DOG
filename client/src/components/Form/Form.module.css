@@ -486,3 +486,99 @@
     margin: 0 auto;
 }
 
+
+@media screen and (max-width: 576px) {
+    .BigContainer {
+        width: 100%;
+        padding: 0;
+    }
+    .BigTitle {
+        font-size: 2.5rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .ImageBreed {
+        height: 4rem;
+        width: 4rem;
+        position: static;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .ContainerTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .BreedContainer label, .BreedContainer2 label {
+        font-size: 1.2rem;
+        width: 38.5vw;
+    }
+
+    .BreedContainer input, .BreedContainer2 input {
+        width: 38.2vw;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .FormContainer {
+        width: 100%;
+    }
+
+    .OptionsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Image {
+        height: 4.5rem;
+        width: 4.5rem;
+        position: static;
+    }
+
+    .AttributeContainer {
+        padding: 0;
+    }
+
+    .InputContainer {
+        display: block;
+        height: 5.4vh;
+    }
+
+    .InputContainer input {
+        padding: 0;
+        height: 100%;
+
+    }
+
+    .InputContainer label {
+        display:inline-block;
+        height: 3.1rem;
+        padding-top:1px
+    }
+
+    .FormContainer .Titles {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .FormContainer .TitleWeight {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .FormContainer .Measure {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    
+};
