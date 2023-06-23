@@ -3,6 +3,7 @@ import Filters from "../Filters/Filters";
 import style from "./NavBar.module.css";
 import darkHeartIcon from '../../assets/dark_color_heart_icon.png'
 import pawDIcon from "../../assets/paw_logo_icon.png"
+import menuIcon from "../../assets/menu-icon.png"
 import {Link} from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { sortByDbprocedence, fetchDogs, clearDogs,disableAllFilters } from "../../features/dogsSlice";
@@ -52,6 +53,27 @@ const NavBar = () => {
                 <button className={style.Button} type='button'><h3>Add your doggy</h3></button>
                 </div>
             </Link>
+
+            <label htmlFor="checkbox" className={style.Label}>
+                <img src={menuIcon} alt="" />
+            </label>
+
+            <input type="checkbox" className={style.Checkbox} name="checkbox" id= "checkbox">
+            </input>
+
+            <div className={style.DropMenuMobile}>
+                <ul>
+                    <li>
+                        <Link to={'/form'}>
+                            Add your doggy
+                        </Link>
+                    </li>
+                    <li>
+                        Added
+                    </li>
+                </ul>
+            </div>
+
         </header>
         
         

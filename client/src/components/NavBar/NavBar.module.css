@@ -9,7 +9,7 @@
     padding-top: .6rem;
     align-items: center;
     padding-right: 2%;
-    width: 98vw;
+    width: 100vw;
     
 }
 .LogoContainer{
@@ -136,4 +136,86 @@
 
 .Button:hover:active{
     background-color: #9D8189;
+}
+
+.Checkbox {
+    display: none;
+}
+
+.Label {
+    display: none;
+    cursor: pointer;
+}
+
+.DropMenuMobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #ffe5d9;
+    border-top: .2rem solid #9d8189;
+    display: none;
+    left: 0;
+    right: 0;
+}
+
+.DropMenuMobile ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.DropMenuMobile ul li a{
+    color: #9d8189;
+    font-family: "Montserrat-Medium";
+    font-size: 1.2rem;
+} 
+
+.DropMenuMobile ul li{
+    color: #9d8189;
+    font-family: "Montserrat-Medium";
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.DropMenuMobile ul li a:hover{
+    color: #5b4a4f;
+}
+
+.DropMenuMobile ul li:hover{
+    color: #5b4a4f;
+}
+
+@media screen and (max-width: 576px) {
+
+    .ButtonHeartContainer{
+        display: none;
+    }
+
+    .ButtonAddContainer{
+        display: none;
+    }
+
+    .PawIcon{
+        height: 5vh;
+    }
+
+    .LogoContainer p{
+        font-size: 1.4rem;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+
+    .Label{
+        display: initial;
+        margin-right: 1rem;
+    }
+    .Label img {
+        height: 2rem;
+    }
+
+    .Checkbox:checked ~ .DropMenuMobile{
+        display: initial;
+        
+    }
+
 }

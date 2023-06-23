@@ -26,22 +26,24 @@ const Filters = () => {
         dispatch(setSelectedTemperaments([]))
     }
     return (
-    <div className={style.Container}>
-        <h3 className={style.Order}>Sort By:</h3>
-        <ul className={style.Filters}>
-            <li><Weight/></li>
+        <>
 
-            <li><Breed/></li>
-            
-            <li><Temperament/></li>
-            <div className={filterOn ? `${style.ClearContainer} ${style.ClearContainerOn}`: style.ClearContainer} onClick ={handleClickClearAll}>
-                <button className={style.CleanContainer} onClick ={handleClickClearAll}><img className={style.ClearFilters} src={clearIcon} alt=""/></button>
-                <h3>Clear</h3>
+            <div className={style.Container}>
+                <h3 className={style.Order}>Sort By:</h3>
+                <ul className={style.Filters}>
+                    <li><Weight/></li>
+
+                    <li><Breed/></li>
+                    
+                    <li><Temperament/></li>
+                    <div className={filterOn ? `${style.ClearContainer} ${style.ClearContainerOn}`: style.ClearContainer} onClick ={handleClickClearAll}>
+                        <button className={style.CleanContainer} onClick ={handleClickClearAll}><img className={style.ClearFilters} src={clearIcon} alt=""/></button>
+                        <h3>Clear</h3>
+                    </div>
+                
+                </ul>
             </div>
-        
-        </ul>
-
-    </div>
+        </>
     )
 };
 

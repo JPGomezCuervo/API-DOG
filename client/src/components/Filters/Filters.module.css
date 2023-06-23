@@ -45,3 +45,20 @@
 ul{
     list-style: none;
 }
+
+.MobileContainer{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .Container {
+        display: none;
+    }
+
+    .MobileContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
