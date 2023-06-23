@@ -1,12 +1,16 @@
 import style from './Pagination.module.css'
 import { useDispatch } from 'react-redux';
 import { setCurrentPage, setNextPage, setPrevPage } from '../../features/utilsSlice';
+
 const Pagination = ({totalDogs, dogsPerPage, currentPage}) => {
     const dispatch = useDispatch();
     
     const pages = [];
     for (let i = 1 ; i <= Math.ceil(totalDogs / dogsPerPage) ; i++) {
-        pages.push(i);
+        if(i === 1 || i === Math.ceil(totalDogs / dogsPerPage) || (i >= currentPage - 2 && i <= currentPage + 2)
+        ) pages.push(i);
+
+        if ( currentPage < 5 && i > 1 && i < 7 && !pages.includes(i)) pages.push(i);
     }
 
     const handleNextClick = () => {
