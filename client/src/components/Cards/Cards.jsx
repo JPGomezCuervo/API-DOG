@@ -30,7 +30,7 @@ const Cards = () => {
     };
 
     return (
-        <div>
+        <div className={style.MetaContainer}>
 
             {status === 'loading'?
             <div ref={cardsRef} className={style.CardsContainer}>

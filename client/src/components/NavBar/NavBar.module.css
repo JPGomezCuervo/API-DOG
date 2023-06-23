@@ -162,6 +162,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    cursor: pointer;
 }
 .DropMenuMobile ul li a{
     color: #9d8189;
@@ -196,7 +197,7 @@
     }
 
     .PawIcon{
-        height: 5vh;
+        height: 6vh;
     }
 
     .LogoContainer p{

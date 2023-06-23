@@ -1,6 +1,9 @@
 
+.MetaContainer {
+    width: 100%;
+    
+}
 .CardsContainer{
-    width: 101.7rem;
     margin: 0 auto;
     height: 100%;
     display: grid;
@@ -10,6 +13,7 @@
     padding-top: 15rem;
     margin-bottom: 20rem;
     visibility: visible;
+    overflow-x: hidden;
 }
 
 .DivError{
@@ -57,3 +61,14 @@
    display: none;
    visibility: hidden;
 }
+
+@media screen and (max-width: 576px) {
+    .CardsContainer {
+        width: 100vw;
+        display: flex;
+        flex-direction: column; 
+        margin: 0 auto;
+        padding-top: 10%;
+        overflow-x: hidden;
+    }
+};

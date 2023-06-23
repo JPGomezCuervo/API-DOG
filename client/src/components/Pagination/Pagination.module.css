@@ -1,11 +1,12 @@
 
 .Container{
     margin: 0 auto;
-    width: fit-content;
+    width: 100%;
     display: flex;
     gap: .5rem;
     margin-bottom: .6rem;
     margin-top: 15%;
+    flex-wrap: wrap;
 }
 
 .Button{

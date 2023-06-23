@@ -1,9 +1,10 @@
 import SearchBar from "../SearchBar/SearchBar";
 import Filters from "../Filters/Filters";
 import style from "./NavBar.module.css";
-import darkHeartIcon from '../../assets/dark_color_heart_icon.png'
-import pawDIcon from "../../assets/paw_logo_icon.png"
-import menuIcon from "../../assets/menu-icon.png"
+import darkHeartIcon from '../../assets/dark_color_heart_icon.png';
+import pawDIcon from "../../assets/paw_logo_icon.png";
+import menuIcon from "../../assets/menu-icon.png";
+import FilterBarMobile from "../Filters/FilterBarMobile";
 import {Link} from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { sortByDbprocedence, fetchDogs, clearDogs,disableAllFilters } from "../../features/dogsSlice";
@@ -33,48 +34,51 @@ const NavBar = () => {
         window.scrollTo({top: 0, left:0, behavior: 'auto'})
     }
     return (
-
-        <header className={style.Header}>
-            <button className={style.LogoContainer}>
-                <img className={style.PawIcon} src={pawDIcon} alt="" onClick={handleLogoClick}/>
-                <p onClick={handleLogoClick}>oggo</p>
-            </button>
-            
-            <Filters/>
-            <SearchBar/>
-            <div className={style.ButtonHeartContainer}>
-                <button className={style.HeartContainer} onClick={handleClick}>
-                    <img className={style.HeartIcon} src={darkHeartIcon} alt="" />
-                    <h3>Added</h3>
+        <>
+            <header className={style.Header}>
+                <button className={style.LogoContainer}>
+                    <img className={style.PawIcon} src={pawDIcon} alt="" onClick={handleLogoClick}/>
+                    <p onClick={handleLogoClick}>oggo</p>
                 </button>
-            </div>
-            <Link to={'/form'}>
-                <div className={style.ButtonAddContainer}>
-                <button className={style.Button} type='button'><h3>Add your doggy</h3></button>
+                
+                <Filters/>
+                <SearchBar/>
+                <div className={style.ButtonHeartContainer}>
+                    <button className={style.HeartContainer} onClick={handleClick}>
+                        <img className={style.HeartIcon} src={darkHeartIcon} alt="" />
+                        <h3>Added</h3>
+                    </button>
                 </div>
-            </Link>
+                <Link to={'/form'}>
+                    <div className={style.ButtonAddContainer}>
+                    <button className={style.Button} type='button'><h3>Add your doggy</h3></button>
+                    </div>
+                </Link>
 
-            <label htmlFor="checkbox" className={style.Label}>
-                <img src={menuIcon} alt="" />
-            </label>
+                <label htmlFor="checkbox" className={style.Label}>
+                    <img src={menuIcon} alt="" />
+                </label>
 
-            <input type="checkbox" className={style.Checkbox} name="checkbox" id= "checkbox">
-            </input>
+                <input type="checkbox" className={style.Checkbox} name="checkbox" id= "checkbox">
+                </input>
 
-            <div className={style.DropMenuMobile}>
-                <ul>
-                    <li>
-                        <Link to={'/form'}>
-                            Add your doggy
-                        </Link>
-                    </li>
-                    <li>
-                        Added
-                    </li>
-                </ul>
-            </div>
+                <div className={style.DropMenuMobile}>
+                    <ul>
+                        <li>
+                            <Link to={'/form'}>
+                                Add your doggy
+                            </Link>
+                        </li>
+                        <li onClick={handleClick}>
+                            Added
+                        </li>
+                    </ul>
+                </div>
 
-        </header>
+            </header>
+
+            <FilterBarMobile/>
+        </>
         
         
         
