@@ -10,11 +10,14 @@ import { useDispatch } from "react-redux";
 import { sortByDbprocedence, fetchDogs, clearDogs,disableAllFilters } from "../../features/dogsSlice";
 import { useState} from "react";
 import { setCurrentPage } from "../../features/utilsSlice";
+import { useRef } from "react";
+
 const NavBar = () => {
     
     const [clickSort, setClickSort] = useState(false);
 
     const dispatch = useDispatch();
+    const inputRef = useRef(null);
     
     const handleClick = () => {
         if (!clickSort) {
@@ -28,7 +31,18 @@ const NavBar = () => {
             dispatch(disableAllFilters());
             dispatch(setCurrentPage(1));
         }
+        inputRef.current.checked = false;
+
     };
+
+    const handleAllClick = () => {
+        dispatch(clearDogs());
+        dispatch(fetchDogs());
+        dispatch(disableAllFilters());
+        dispatch(setCurrentPage(1));
+        inputRef.current.checked = false;
+    };
+
     const handleLogoClick = () => {
         window.location.reload()
         window.scrollTo({top: 0, left:0, behavior: 'auto'})
@@ -59,7 +73,7 @@ const NavBar = () => {
                     <img src={menuIcon} alt="" />
                 </label>
 
-                <input type="checkbox" className={style.Checkbox} name="checkbox" id= "checkbox">
+                <input ref={inputRef} type="checkbox" className={style.Checkbox} name="checkbox" id= "checkbox">
                 </input>
 
                 <div className={style.DropMenuMobile}>
@@ -71,6 +85,9 @@ const NavBar = () => {
                         </li>
                         <li onClick={handleClick}>
                             Added
+                        </li>
+                        <li onClick={handleAllClick}>
+                            All dogs
                         </li>
                     </ul>
                 </div>

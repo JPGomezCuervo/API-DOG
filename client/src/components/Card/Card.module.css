@@ -98,16 +98,16 @@ margin: .6rem 0 .5rem 0;
     }
     .CardOdd,
     .CardEven {
-      width: 16rem;
+      width: 18rem;
       min-height: 18rem;
       padding-top: 0.8rem;
     }
   
     .CardOdd img,
     .CardEven img {
-      width: 14rem;
-      height: 11.25rem;
-      padding-left: 1rem; 
+      width: 15rem;
+      height: 11.25rem; 
+      padding-left: .6rem;
     }
   
     .Image {
