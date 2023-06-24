@@ -65,16 +65,14 @@
 
 @media screen and (max-width: 576px) {
     .Container {
-        justify-content: left;
-        gap: .2rem;
-        margin-left: 5%;
+        gap: .1rem;
     }
     .Button {
-        transform:scale(0.9)
+        transform:scale(0.85)
     }
 
     .ButtonArrows {
-        transform: scale(0.9);
+        transform: scale(0.85);
     }
 
 }

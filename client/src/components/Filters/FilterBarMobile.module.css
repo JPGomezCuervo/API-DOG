@@ -1,20 +1,23 @@
 .Container {
     display: none;
     width: 100%;
-    padding-top: 11vh;
     background-color: #ffe5d9;
     justify-content: space-evenly;
+}
+
+.Container ul {
+    margin: 0;
 }
 
 .ClearContainer{
     cursor: pointer;
     border: .2rem solid transparent;
     padding: .1rem;
-    visibility: hidden;
+    display: none;
 }
 
 .ClearContainerOn{
-    visibility: visible;
+    display: initial;
 }
 
 .ClearContainer h3{
@@ -39,6 +42,7 @@
 
 .CleanContainer{
     height: fit-content;
+    width: fit-content;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -56,4 +60,21 @@ ul{
 
 .MobileContainer{
     display: none;
+}
+@media screen and (max-width: 414px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+    .Order {
+        font-size: 1rem;
+        padding-left: 7%;
+    }
+
+    .Filters {
+        transform: scale(.72);
+        margin-top: 5rem;
+    }
 }

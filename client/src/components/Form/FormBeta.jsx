@@ -170,8 +170,6 @@ class FormBeta extends Component {
             
             <div className={style.BigContainer}>
 
-                <div classname={style.MetaContainer}>
-
                 
                 <div>
                     <NavLink to = {'/homepage'} className={style.Back}>
@@ -290,7 +288,7 @@ class FormBeta extends Component {
                                 )
                             })}
 
-                            <button className={style.Delete} onClick={this.handleDeleteClick}>Delete</button>
+                            <button  onClick={this.handleDeleteClick}>Delete</button>
                         </ul>
                             {errors.temperaments && <p className={style.Error}>{errors.temperaments}</p>}
                     </div>
@@ -307,7 +305,7 @@ class FormBeta extends Component {
                 </form>
                 </div>
                 
-            </div>
+
             </>
         );
     }

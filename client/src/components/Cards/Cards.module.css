@@ -65,13 +65,13 @@
         }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px) {
     
     .CardsContainer {
-        grid-template-columns: 30rem;
+        grid-template-columns: 1fr;
         justify-content: center;
         grid-row-gap: 0;
-        padding-top: 10rem;
+        padding-top: 0;
         padding-bottom: 10rem;
         margin-bottom: 0;
     }

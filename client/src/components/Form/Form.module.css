@@ -491,12 +491,50 @@
 @media screen and (max-width: 1366px) {
     .BigContainer {
         position: absolute;
-        top: -35%;
-        left: -18.5%;
-        transform: scale(0.71);
-        margin-bottom: 10rem;
+        top: 100%;
+        left: 50%;
+        transform:  translate(-50%, -50%) scale(0.7)
     }
 
     
+}
+
+@media screen and (max-width: 414px) {
+    .BigContainer {
+        position: absolute;
+        top: 200%;
+        left: 50%;
+        transform:  translate(-50%, -50%) 
+    }
+
+    .Temperaments {
+        grid-template-columns: repeat(3,1fr)
+        
+    }
+
+    .OptionsContainer {
+        gap: 0
+    }
+
+
+    .InputContainer input {
+        width: 5%;
+        height:2.7rem;
+        font-size: 1rem;
+    }
+
+    .InputContainer label {
+        height: 3rem;
+        width: 2.7rem;
+        font-size: 1.1rem;
+    }
+    .AttributeContainer {
+
+    }
+
+    .Image {
+        height: 3rem;
+        width: 3rem;
+    }
 }
 

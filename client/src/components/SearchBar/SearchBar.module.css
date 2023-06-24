@@ -46,7 +46,7 @@
     font-family: 'Montserrat-Regular';
     height: 100%;
     width: fit-content;
-    background-color: white;
+    background-color: transparent;
     line-height: 100%;
     color: grey;
     font-size: 1.6rem;
@@ -120,3 +120,22 @@
     }
     
 }
+
+@media screen and (max-width: 414px) {
+    .Container {
+        transform: scale(.65);
+        position: relative;
+        margin: 0;
+        width: 100%;
+        right: 2%;
+    }
+    .Input {
+        font-size: 1.3rem;
+    }
+
+    .Lupa {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}
+

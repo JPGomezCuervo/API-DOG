@@ -94,9 +94,9 @@ margin: .6rem 0 .5rem 0;
 
  }
 
- @media screen and (max-width: 576px) {
+ @media screen and (max-width: 414px) {
     .Back {
-        transform: scale(0.85);
+        transform: scale(0.72);
     }
  }
 

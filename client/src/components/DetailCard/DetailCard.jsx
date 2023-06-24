@@ -28,58 +28,61 @@ const DetailCard = () => {
     }, [dispatch, id])
 
     return (
-        <div className={style.BigContainer}>
-            <div className={style.Title}><h2>{name}</h2></div>
+        <div className={style.MetaContainer}>
 
-            <div className={style.Container}>
-                <div className={style.LeftSide}>
-                        
-                    <div className={style.Card}>
-                        <img className={style.TapeTop} src={tapeIcon} alt="" />
-                        <img className={style.TapeBottom} src={tapeIcon} alt="" />
-                        <div className={style.Description}>
-                            <div className={style.ImageDiv}>
-                                {status === 'loading' ? <img className={style.Image} src={loading} alt={name}></img> : <img className={style.Image} src={image} alt={name}/>}
+            <div className={style.BigContainer}>
+                <div className={style.Title}><h2>{name}</h2></div>
+
+                <div className={style.Container}>
+                    <div className={style.LeftSide}>
+                            
+                        <div className={style.Card}>
+                            <img className={style.TapeTop} src={tapeIcon} alt="" />
+                            <img className={style.TapeBottom} src={tapeIcon} alt="" />
+                            <div className={style.Description}>
+                                <div className={style.ImageDiv}>
+                                    {status === 'loading' ? <img className={style.Image} src={loading} alt={name}></img> : <img className={style.Image} src={image} alt={name}/>}
+                                </div>
+                                        
+                                <h2 className={style.Name}>{name}</h2>
+                                <h2 className={style.Id}>{`ID: ${id}`}</h2>
                             </div>
-                                    
-                            <h2 className={style.Name}>{name}</h2>
-                            <h2 className={style.Id}>{`ID: ${id}`}</h2>
+
                         </div>
 
                     </div>
+                
+                    <div className={style.RightSide}>
 
+                                <div className={style.AttributesContainer}>
+
+                                    <div className={style.TextTemperament}>
+                                        <img className={style.Icon} src={happyDogIcon} alt="" />
+                                        <h3>{temperament}</h3>
+                                    </div>
+
+                                    <div className={style.Text}>
+                                        <img className={style.Icon} src={weightIcon} alt="" />
+                                        <h3>{weight}</h3>
+                                    </div>
+
+                                    <div className={style.Text}>
+                                        <img className={style.Icon} src={rulerIcon} alt="" />
+                                        <h3>{height}</h3>
+                                    </div>
+
+                                    <div className={style.Text}>
+                                        <img className={style.Icon} src={heartIcon} alt="" />
+                                        <h3>{life_span}</h3>
+                                    </div>
+                                </div>
+                    </div>
                 </div>
-            
-                <div className={style.RightSide}>
 
-                            <div className={style.AttributesContainer}>
-
-                                <div className={style.TextTemperament}>
-                                    <img className={style.Icon} src={happyDogIcon} alt="" />
-                                    <h3>{temperament}</h3>
-                                </div>
-
-                                <div className={style.Text}>
-                                    <img className={style.Icon} src={weightIcon} alt="" />
-                                    <h3>{weight}</h3>
-                                </div>
-
-                                <div className={style.Text}>
-                                    <img className={style.Icon} src={rulerIcon} alt="" />
-                                    <h3>{height}</h3>
-                                </div>
-
-                                <div className={style.Text}>
-                                    <img className={style.Icon} src={heartIcon} alt="" />
-                                    <h3>{life_span}</h3>
-                                </div>
-                            </div>
+                <div className={style.ButtonContainer}>
+                    <button className={style.Button} onClick={handleClick}>Go Back</button></div>
                 </div>
-            </div>
-
-            <div className={style.ButtonContainer}>
-                <button className={style.Button} onClick={handleClick}>Go Back</button></div>
-            </div>
+        </div>
     )
 }
 

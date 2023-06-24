@@ -1,14 +1,16 @@
 
 
+.MetaContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .BigContainer{
-    border: solid #FFE5D9 2rem;
+    border: solid #FFE5D9 1.5rem;
     border-radius: 3rem;
-    height: fit-content;
-    width: fit-content;
-    margin: 0 auto;
-    padding-left: 1rem ;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding: 2rem;
 }
 .Title{
     text-align: center;
@@ -16,10 +18,10 @@
 }
 
 .Title h2{
-
     color: #9D8189;
     font-family: 'Montserrat-Medium';
     font-size: 3rem;
+    margin: auto auto;
 }
 
 .TextTemperament{
@@ -28,10 +30,9 @@
 }
 
 .TextTemperament h3{
-    margin:auto 0;
+    margin:auto auto;
     width: 30rem;
-    text-align: start;
-    margin-left: 2rem;
+    text-align: center;
     
 }
 
@@ -41,9 +42,9 @@
 }
 
 .Text h3{
-    text-align: start;
-    margin: auto 0;
-    margin-left: 5rem;
+    width: 100%;
+    margin: auto auto;
+    text-align: center;
 }
 
 .Container{

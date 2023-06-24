@@ -106,10 +106,13 @@
     .Label {
         display: none;
         cursor: pointer;
+        margin-right: 4%;
     }
+
     .Label img {
         display: none;
         cursor: pointer;
+        height: 2rem;
     }
 
     .DropMenuMobile {
@@ -154,7 +157,7 @@
 
     @media (min-width: 1367px) and (max-width: 1919px) {
         .LogoContainer {
-            transform: scale(.9);
+            transform: scale(.88);
             margin-right: 2.5%;
             margin-left: 1%;
         }
@@ -164,18 +167,18 @@
         }
 
         .HeartContainer {
-            transform: scale(.9);
+            transform: scale(.88);
             margin-right: 0%;
             font-size: 1.5rem;
         
         }
 
         .HeartContainer:hover {
-            transform: scale(.9);
+            transform: scale(.88);
         }
         
         .ButtonAddContainer {
-            transform: scale(.9);  
+            transform: scale(.88);  
             margin: 0;
         }
 
@@ -205,7 +208,7 @@
     }
     
     .ButtonAddContainer {
-        transform: scale(0.68);  
+        transform: scale(0.8);  
         margin: 0;
     }
 
@@ -242,4 +245,33 @@
         font-size: 1.5rem;
     }
 
+}
+
+@media screen and (max-width: 414px) {
+    .Header {
+        margin-bottom: 0;
+    }
+
+    .ButtonAddContainer {
+        display: none;
+    }
+
+    .HeartContainer {
+        display: none;
+    }
+
+    .Label {
+        display: initial;
+    }
+    .Label img {
+        display: initial;
+    }
+
+    .LogoContainer {
+        transform: scale(0.7);
+    }
+
+    .Checkbox:checked ~ .DropMenuMobile {
+        display: initial;
+    }
 }

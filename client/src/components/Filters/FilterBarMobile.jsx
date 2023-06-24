@@ -36,6 +36,7 @@ const FilterBarMobile = () => {
                     <li><Breed/></li>
                     
                     <li><Temperament/></li>
+                    
                     <div className={filterOn ? `${style.ClearContainer} ${style.ClearContainerOn}`: style.ClearContainer} onClick ={handleClickClearAll}>
                         <button className={style.CleanContainer} onClick ={handleClickClearAll}><img className={style.ClearFilters} src={clearIcon} alt=""/></button>
                         <h3>Clear</h3>
