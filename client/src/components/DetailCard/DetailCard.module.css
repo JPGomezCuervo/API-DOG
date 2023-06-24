@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 414px) {
     .MetaContainer {
-        transform: scale(0.52);
+        transform: scale(0.5);
     }
     .Container {
         display: flex;
@@ -176,5 +176,18 @@
         width: 70%;
         margin: 0 auto;
         margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width:390px){
+    .MetaContainer {
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (max-width:360px) {
+    .MetaContainer {
+        transform: scale(0.38);
+        
     }
 }
