@@ -57,15 +57,3 @@ ul{
 .MobileContainer{
     display: none;
 }
-
-@media screen and (max-width: 576px) {
-    .Container {
-        display: flex;
-        flex-direction: row;
-    }
-    .ClearFilters{
-        height: 2.5rem;
-        width: 2.5rem;
-
-    }
-}

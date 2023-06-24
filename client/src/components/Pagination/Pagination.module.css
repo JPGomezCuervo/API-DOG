@@ -7,6 +7,7 @@
     margin-top: 15%;
     margin: 0 auto;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .Button{
@@ -59,4 +60,21 @@
 
 .active{
     background-color: #ec7d8d;
+}
+
+
+@media screen and (max-width: 576px) {
+    .Container {
+        justify-content: left;
+        gap: .2rem;
+        margin-left: 5%;
+    }
+    .Button {
+        transform:scale(0.9)
+    }
+
+    .ButtonArrows {
+        transform: scale(0.9);
+    }
+
 }

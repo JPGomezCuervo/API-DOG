@@ -169,6 +169,10 @@ class FormBeta extends Component {
                 </>
             
             <div className={style.BigContainer}>
+
+                <div classname={style.MetaContainer}>
+
+                
                 <div>
                     <NavLink to = {'/homepage'} className={style.Back}>
                         Back
@@ -301,6 +305,7 @@ class FormBeta extends Component {
                     {(!allowSubmit)? (<p className={style.ErrorLast}>Please fill all the fields</p>) : (<p></p> )}
                     </div>
                 </form>
+                </div>
                 
             </div>
             </>

@@ -87,22 +87,6 @@ ul li:hover .Dropmenu{
     border-radius: .4rem;
 }
 
-@media screen and (max-width: 576px) {
-
-    .FilterImage{
-        width: 3rem;
-    }
-    .Dropmenu{
-        width: 10rem;
-    }
-    .ListOption.Pressed{
-        border: #9D8189 solid .1rem;
-    }
-    .ListOption:hover{
-        border: solid #9D8189 .1rem;
-        border-radius: .4rem;
-    }
-}
 
 @media screen and (max-width: 1280px) {
     .FilterImage.EnableImg{

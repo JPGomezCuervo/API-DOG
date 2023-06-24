@@ -90,57 +90,17 @@ margin: .6rem 0 .5rem 0;
 
  }
 
- @media screen and (max-width: 576px) {
+ @media screen and (max-width: 1366px) {
 
+ }
+
+ @media screen and (max-width: 576px) {
     .Back {
-        margin: 0 auto;
-        margin-bottom: 4rem;
+        transform: scale(0.85);
     }
-    .CardOdd,
-    .CardEven {
-      width: 18rem;
-      min-height: 18rem;
-      padding-top: 0.8rem;
-    }
-  
-    .CardOdd img,
-    .CardEven img {
-      width: 15rem;
-      height: 11.25rem; 
-      padding-left: .6rem;
-    }
-  
-    .Image {
-      width: 15rem;
-      height: 11.25rem;
-    }
-  
-    .Title {
-      font-size: 1.4rem;
-      margin: 0.3rem 0 0.2rem 0;
-    }
-  
-    .Weight {
-      font-size: small;
-    }
-  
-    .Attributes {
-      width: 16rem;
-    }
-  
-    .Attributes h3 {
-      font-size: 1.4rem;
-      margin-bottom: 0.6rem;
-      margin-top: 0.1rem;
-    }
-  
-    .Temperament {
-      padding-left: 0.8rem;
-      padding-right: 0.8rem;
-      margin-top: 0.2rem;
-      margin-bottom: auto;
-    }
-  }
+ }
+
+
   
   
 

@@ -52,24 +52,32 @@ ul{
     display: none;
 }
 
+@media screen and (max-width: 1366px) {
 
-@media screen and (max-width: 576px) {
-    .Container {
-        display: none;
+    .Order {
+        transform: scale(.8);
     }
 
-    .MobileContainer{
-        display: flex;
-        flex-direction: column;
+    .Container {
+        margin: 0;
+    }
+    .Filters {
+        transform: scale(.78);
+        width: 25rem;
+        margin: 0;
     }
 
 }
 
 @media screen and (max-width: 1280px) {
     .Filters {
-        transform: scale(.9);
+        transform: scale(.8);
         margin-top: 0;
         width: 25rem;
+    }
+
+    .Container {
+        margin-left: 0;
     }
 
     .Container h3 {

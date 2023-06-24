@@ -1,188 +1,212 @@
-.Header{
-    position: fixed;
-    z-index: 1;
-    background-color:#FFE5D9 ;
-    box-shadow: 0px 4px 10px 3px #00000040;
-    display: flex;
-    min-height: 5rem;
-    margin-bottom: 8rem;
-    align-items: center;
-    padding-top: 1%;
-    left: 0;
-    right: 0;
-}
-.LogoContainer{
-    border: 0;
-    background-color: #FFE5D9;
-    display: flex;
-    font-family: 'Montserrat-ExtraBold';
-    color: #5b4a4f;
-    margin-left: 2%;
-    cursor: pointer;
-    margin-right: 1%;
-}
-
-.LogoContainer p{
-    position: absolute;
-    font-family: 'Montserrat-ExtraBold';
-    margin-top: 1.2rem;
-    margin-left: 2.7rem;
-    transform: rotate(-90deg);
-    font-size: 2rem;
-}
-
-.PawIcon{
-    height: 5rem;
-    transform: rotate(90deg);
-}
-
-
-.HeartContainer {
-
-    display: flex;
-    color: #ffffff;
-    font-family:'Montserrat-Bold';
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    gap: .6rem;
-    width: 12rem;
-    padding: .7rem;
-	border-radius: 1rem;
-	font-size: 2rem;
-	font-weight: 600;
-	background-image: linear-gradient(-180deg, #f4acb7 0%, #f07386 100%);
-	box-shadow: 0 0 1.3rem .1rem #c7b2a8,
-    0 -0.25rem 1.5rem #f07386 inset,
-    0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
-    0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
-    border: 0;
-    transition: .4s;
-    margin-right: 2%;
-}
-
-
-.HeartContainer:hover {
-    transform: scale(0.9);
-}
-
-.HeartIcon{
-    display: inline-block;
-    width: 2.2rem;
-    cursor: pointer;
-    transition: .4s;
-    
-}
-
-.ButtonAddContainer{
-    color: #ffffff;
-    background-color: #F4ACB7;
-    border-radius: .5rem;
-    font-family:'Montserrat-Bold';
-    font-size: 2rem;
-    cursor: pointer;
-    transition: .3s;
-    width: fit-content;
-    white-space: nowrap;
-    padding: .8rem;
-
-    margin-right: 2%;
-}
-
-
-
-.ButtonAddContainer:hover{
-    background-color: #ec7d8d;
-}
-
-.ButtonAddContainer:hover:active{
-    background-color: #9D8189;
-}
-
-.Checkbox {
-    display: none;
-}
-
-.Label {
-    display: none;
-    cursor: pointer;
-}
-.Label img {
-    display: none;
-    cursor: pointer;
-}
-
-.DropMenuMobile {
-    display: none;
-    position: absolute;
-    top: 100%;
-    background: #ffe5d9;
-    border-top: .2rem solid #9d8189;
-    display: none;
-    left: 0;
-    right: 0;
-}
-
-.DropMenuMobile ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    cursor: pointer;
-}
-.DropMenuMobile ul li a{
-    color: #9d8189;
-    font-family: "Montserrat-Medium";
-    font-size: 1.2rem;
-} 
-
-.DropMenuMobile ul li{
-    color: #9d8189;
-    font-family: "Montserrat-Medium";
-    font-size: 1.2rem;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-}
-
-.DropMenuMobile ul li a:hover{
-    color: #5b4a4f;
-}
-
-.DropMenuMobile ul li:hover{
-    color: #5b4a4f;
-}
-
-@media screen and (max-width: 576px) {
-
-    .ButtonHeartContainer{
-        display: none;
+    .Header{
+        position: fixed;
+        z-index: 1;
+        background-color:#FFE5D9 ;
+        box-shadow: 0px 4px 10px 3px #00000040;
+        display: flex;
+        min-height: 5rem;
+        margin-bottom: 8rem;
+        align-items: center;
+        padding-top: 1%;
+        left: 0;
+        right: 0;
     }
-
-    .ButtonAddContainer{
-        display: none;
-    }
-
-    .PawIcon{
-        height: 6vh;
+    .LogoContainer{
+        border: 0;
+        background-color: #FFE5D9;
+        display: flex;
+        font-family: 'Montserrat-ExtraBold';
+        color: #5b4a4f;
+        margin-left: 2%;
+        cursor: pointer;
+        margin-right: 4%;
     }
 
     .LogoContainer p{
-        font-size: 1.4rem;
-        margin-top: 2%;
-        margin-left: 5%;
+        position: absolute;
+        font-family: 'Montserrat-ExtraBold';
+        margin-top: 1.2rem;
+        margin-left: 2.7rem;
+        transform: rotate(-90deg);
+        font-size: 2rem;
     }
 
-    .Label{
-        display: initial;
-        margin-right: 1rem;
+    .PawIcon{
+        height: 5rem;
+        transform: rotate(90deg);
+    }
+
+
+    .HeartContainer {
+
+        display: flex;
+        color: #ffffff;
+        font-family:'Montserrat-Bold';
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        gap: .6rem;
+        width: 12rem;
+        padding: .7rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        background-image: linear-gradient(-180deg, #f4acb7 0%, #f07386 100%);
+        box-shadow: 0 0 1.3rem .1rem #c7b2a8,
+        0 -0.25rem 1.5rem #f07386 inset,
+        0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+        0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
+        border: 0;
+        transition: .4s;
+        margin-right: 2%;
+    }
+
+
+    .HeartContainer:hover {
+        transform: scale(0.9);
+    }
+
+    .HeartIcon{
+        display: inline-block;
+        width: 2.2rem;
+        cursor: pointer;
+        transition: .4s;
+        
+    }
+
+    .ButtonAddContainer{
+        color: #ffffff;
+        background-color: #F4ACB7;
+        border-radius: .5rem;
+        font-family:'Montserrat-Bold';
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .3s;
+        width: fit-content;
+        white-space: nowrap;
+        padding: .8rem;
+
+        margin-right: 2%;
+    }
+
+
+
+    .ButtonAddContainer:hover{
+        background-color: #ec7d8d;
+    }
+
+    .ButtonAddContainer:hover:active{
+        background-color: #9D8189;
+    }
+
+    .Checkbox {
+        display: none;
+    }
+
+    .Label {
+        display: none;
+        cursor: pointer;
     }
     .Label img {
-        display: initial    ;
-        height: 2rem;
+        display: none;
+        cursor: pointer;
     }
 
-    .Checkbox:checked ~ .DropMenuMobile{
-        display: initial;
+    .DropMenuMobile {
+        display: none;
+        position: absolute;
+        top: 100%;
+        background: #ffe5d9;
+        border-top: .2rem solid #9d8189;
+        display: none;
+        left: 0;
+        right: 0;
+    }
+
+    .DropMenuMobile ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        cursor: pointer;
+    }
+    .DropMenuMobile ul li a{
+        color: #9d8189;
+        font-family: "Montserrat-Medium";
+        font-size: 1.2rem;
+    } 
+
+    .DropMenuMobile ul li{
+        color: #9d8189;
+        font-family: "Montserrat-Medium";
+        font-size: 1.2rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .DropMenuMobile ul li a:hover{
+        color: #5b4a4f;
+    }
+
+    .DropMenuMobile ul li:hover{
+        color: #5b4a4f;
+    }
+
+
+    @media (min-width: 1367px) and (max-width: 1919px) {
+        .LogoContainer {
+            transform: scale(.9);
+            margin-right: 2.5%;
+            margin-left: 1%;
+        }
+
+        .LogoContainer p {
+            margin-right: 0;
+        }
+
+        .HeartContainer {
+            transform: scale(.9);
+            margin-right: 0%;
+            font-size: 1.5rem;
         
+        }
+
+        .HeartContainer:hover {
+            transform: scale(.9);
+        }
+        
+        .ButtonAddContainer {
+            transform: scale(.9);  
+            margin: 0;
+        }
+
+    }
+
+@media screen and (max-width: 1366px) {
+
+    .LogoContainer {
+        transform: scale(0.9);
+        margin-right: 2.5%;
+        margin-left: 1%;
+    }
+
+    .LogoContainer p {
+        margin-right: 0;
+    }
+
+    .HeartContainer {
+        transform: scale(0.9);
+        margin-right: 0%;
+        font-size: 1.5rem;
+    
+    }
+
+    .HeartContainer:hover {
+        transform: scale(0.76);
+    }
+    
+    .ButtonAddContainer {
+        transform: scale(0.68);  
+        margin: 0;
     }
 
 }
