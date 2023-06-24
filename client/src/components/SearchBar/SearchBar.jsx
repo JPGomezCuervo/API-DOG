@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDogsByName, fetchDogs, clearDogs, disableAllFilters, selectAllDogs } from "../../features/dogsSlice";
 import { setCurrentPage, setSearchbar, selectSearchbar } from "../../features/utilsSlice";
-import style from "./SearchBar.module.css"
-import lupaIcon from "../../assets/lupa_icon.png"
+import style from "./SearchBar.module.css";
+import lupaIcon from "../../assets/lupa_icon.png";
 const SearchBar = () => {
     const dogs = useSelector(selectAllDogs);
     const buttonRef = useRef(null)
@@ -50,8 +50,10 @@ const SearchBar = () => {
     }, [dispatch, search])
     
     return (
+        
         <div className={style.Container}>
-            <div>
+            
+            
                 <div className={style.InputContainer} ref={buttonRef}>
                     <input
                     className={style.Input}
@@ -63,9 +65,7 @@ const SearchBar = () => {
                     onKeyDown={handleKeyDown}
                     value={search}/>
                     <button ref={deleteRef} className={style.Delete} onClick={handleEraseClick}>X</button>
-
-            </div>
-            </div>
+                </div>
 
             <button className={style.Button} type="button" onClick={handleClick} >
                 <img className={style.Lupa} src={lupaIcon} alt="" />

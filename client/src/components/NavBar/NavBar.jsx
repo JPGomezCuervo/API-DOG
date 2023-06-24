@@ -13,7 +13,6 @@ import { setCurrentPage } from "../../features/utilsSlice";
 import { useRef } from "react";
 
 const NavBar = () => {
-    
     const [clickSort, setClickSort] = useState(false);
 
     const dispatch = useDispatch();
@@ -50,24 +49,25 @@ const NavBar = () => {
     return (
         <>
             <header className={style.Header}>
-                <button className={style.LogoContainer}>
+
+                <div className={style.LogoContainer}>
                     <img className={style.PawIcon} src={pawDIcon} alt="" onClick={handleLogoClick}/>
                     <p onClick={handleLogoClick}>oggo</p>
-                </button>
+                </div>
                 
                 <Filters/>
                 <SearchBar/>
-                <div className={style.ButtonHeartContainer}>
-                    <button className={style.HeartContainer} onClick={handleClick}>
-                        <img className={style.HeartIcon} src={darkHeartIcon} alt="" />
-                        Added
-                    </button>
-                </div>
-                <Link to={'/form'}>
-                    <div className={style.ButtonAddContainer}>
-                    <button className={style.Button} type='button'>Add your doggy</button>
-                    </div>
+                
+                <button className={style.HeartContainer} onClick={handleClick}>
+                    <img className={style.HeartIcon} src={darkHeartIcon} alt="" />
+                    Added
+                </button>
+
+                
+                <Link to={'/form'} className={style.ButtonAddContainer}>
+                    Add your doggy
                 </Link>
+                
 
                 <label htmlFor="checkbox" className={style.Label}>
                     <img src={menuIcon} alt="" />

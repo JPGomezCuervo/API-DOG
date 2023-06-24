@@ -582,3 +582,12 @@
     }
     
 };
+
+@media screen and (max-width: 1280px) {
+    .BigContainer {
+    }
+
+    .Temperaments {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

@@ -7,12 +7,12 @@ import style from './Cards.module.css'
 import { selectCurrentPage, setSearchbar, selectSearchbar} from "../../features/utilsSlice";
 import loading from '../../assets/loading.gif'
 const Cards = () => {
+    
     const cardsRef = useRef(null)
     const dogs = useSelector(selectAllDogs);
     const status = useSelector(selectDogsStatus);
     const error = useSelector(selectDogsError);
     const currentPage = useSelector(selectCurrentPage);
-    const search = useSelector(selectSearchbar);
 
     const dispatch = useDispatch();
 

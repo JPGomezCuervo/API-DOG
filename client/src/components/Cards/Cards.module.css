@@ -1,19 +1,16 @@
 
-.MetaContainer {
-    width: 100%;
-    
-}
+
 .CardsContainer{
     height: 100%;
-    width: 100%;
+    justify-content: center;
     display: grid;
     grid-template-columns: 27rem 27rem 27rem;
     grid-row-gap: 7%;
     grid-column-gap: 12%;
     padding-top: 15rem;
-    padding-left: 4%;
     margin-bottom: 20rem;
     visibility: visible;
+    padding-bottom: 20rem;
 }
 
 .DivError{
@@ -61,6 +58,14 @@
    display: none;
    visibility: hidden;
 }
+@media screen and (max-width: 1366px){
+    .CardsContainer{
+        grid-template-columns: 27rem 27rem;
+        margin-bottom: 10rem;
+
+    }
+}
+
 
 @media screen and (max-width: 576px) {
     .CardsContainer {

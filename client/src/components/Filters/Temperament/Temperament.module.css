@@ -56,12 +56,8 @@ a{
 
 
 ul li:hover .Dropmenu{
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(14,1fr);
     height: auto;
     width: auto;
-    gap: .7rem;
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
@@ -219,22 +215,14 @@ ul li:hover .Dropmenu{
     }
 }
 
-@media screen and (min-width: 1366px) {
-    .FilterImage{
-        width: 3rem;
+@media screen and (max-width: 1280px) {
+    
+    .FilterImage.EnableImg{
+        border: #9D8189 .17rem solid;
+        border-radius: .8rem;
     }
-    .Dropmenu{
-        width: 15rem;
-    }
-    .ListOption.Pressed{
-        border: #9D8189 solid .15rem;
-    }
-    .ListOption:hover{
-        border: solid #9D8189 .15rem;
-        border-radius: .4rem;
-    }   
 
-    .TotalButtonContainer h3 {
-        font-size: 1rem;
+    .Description.EnableDescription{
+        border-bottom: #9D8189 .17rem solid;
     }
 }

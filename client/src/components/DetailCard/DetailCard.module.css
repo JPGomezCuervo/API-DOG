@@ -227,3 +227,10 @@
         margin-top: 2rem;
     }
 }
+
+
+@media screen and (max-width: 1366px) {
+    .BigContainer {
+        transform: scale(0.8);
+    }
+}

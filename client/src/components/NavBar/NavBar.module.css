@@ -6,12 +6,10 @@
     display: flex;
     min-height: 5rem;
     margin-bottom: 8rem;
-    padding-top: .6rem;
     align-items: center;
-    padding-right: 2%;
-    width: 100vw;
-    justify-content: space-between;
-    
+    padding-top: 1%;
+    left: 0;
+    right: 0;
 }
 .LogoContainer{
     border: 0;
@@ -19,8 +17,9 @@
     display: flex;
     font-family: 'Montserrat-ExtraBold';
     color: #5b4a4f;
-    margin-left: 1%;
+    margin-left: 2%;
     cursor: pointer;
+    margin-right: 1%;
 }
 
 .LogoContainer p{
@@ -37,27 +36,19 @@
     transform: rotate(90deg);
 }
 
-.ButtonHeartContainer{
-    width: 12rem;
-    height: 4rem;
-    margin-left: 2%;
-    margin-right: 3%;
-}
 
 .HeartContainer {
-    margin: auto auto;
-    cursor: pointer;
+
     display: flex;
+    color: #ffffff;
+    font-family:'Montserrat-Bold';
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     gap: .6rem;
     width: 12rem;
-    height: 4rem;
-    text-align: center;
-	cursor: pointer;
-	position: relative;
+    padding: .7rem;
 	border-radius: 1rem;
-    font-family:'Montserrat-Bold';
 	font-size: 2rem;
 	font-weight: 600;
 	background-image: linear-gradient(-180deg, #f4acb7 0%, #f07386 100%);
@@ -67,24 +58,12 @@
     0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
     border: 0;
     transition: .4s;
-    color: #ffffff;
+    margin-right: 2%;
 }
 
-
-.HeartContainer:hover .HeartIcon{
-    width: 1.8rem;
-}
 
 .HeartContainer:hover {
-    font-size: 1.6rem;
-}
-.HeartContainer:hover{
-    width: 11rem;
-    height: 3.6rem;
-    box-shadow: 0 0 0 0 #c7b2a8,
-							0 -0.25rem 1.5rem #f07386 inset,
-							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
-							0 0.25rem 0.5rem 0 rgb(244, 172, 183) inset;
+    transform: scale(0.9);
 }
 
 .HeartIcon{
@@ -96,30 +75,27 @@
 }
 
 .ButtonAddContainer{
-    width: 21rem;
-    height: 100%;
-}
-
-.Button{
-    margin: auto 0;
-    height: 4rem;
     color: #ffffff;
     background-color: #F4ACB7;
-    border: 0;
     border-radius: .5rem;
-    width: 20rem;
     font-family:'Montserrat-Bold';
     font-size: 2rem;
     cursor: pointer;
     transition: .3s;
-    margin-right: 10%;
+    width: fit-content;
+    white-space: nowrap;
+    padding: .8rem;
+
+    margin-right: 2%;
 }
 
-.Button:hover{
+
+
+.ButtonAddContainer:hover{
     background-color: #ec7d8d;
 }
 
-.Button:hover:active{
+.ButtonAddContainer:hover:active{
     background-color: #9D8189;
 }
 
@@ -200,6 +176,7 @@
         margin-right: 1rem;
     }
     .Label img {
+        display: initial    ;
         height: 2rem;
     }
 
@@ -210,67 +187,35 @@
 
 }
 
-@media screen and (max-width: 1366px) {
-
-    .PawIcon{
-        height: 11vh;
+@media screen and (max-width: 1280px) {
+    .LogoContainer img {
+        height: 4.5rem;
     }
 
     .LogoContainer p{
         font-size: 1.8rem;
-        margin-top: 1.4%;
-        margin-left: 3%;
-    }
-    .LogoContainer {
-        margin-right: 2%;
-    }
-
-    .Label{
-        display: initial;
-        margin-right: 1rem;
-    }
-    .Label img {
-        height: 2rem;
-    }
-    .Button {
-        width: 70%;
-        height: 7vh;
-        font-size: 1.4rem;
-        margin: 0;
-    }
-
-    .ButtonAddContainer {
-        width: 21vw;
-    }
-
-    .Header a {
-        width: 19%;
+        margin-top: 1.2rem;
+        margin-left: 2.5rem;
     }
 
     .HeartContainer {
-        width: 100%;
-        height: 8vh;
-        font-size: 1.4rem;
-        margin: auto 0;
-        padding: 1rem;
+        transform: scale(0.8);
+        margin-right: 0%;
+        font-size: 1.5rem;
+    
     }
 
-    .HeartContainer:hover .HeartIcon{
-        width: 1.2rem;
+    .HeartContainer:hover {
+        transform: scale(0.8);
     }
     
-    .HeartContainer:hover {
-        font-size: 1.2rem;
-    }
-    .HeartContainer:hover{
-        width: 95%;
-        height: 7vh;
+    .ButtonAddContainer {
+        transform: scale(0.8);  
+        margin-left: 0;
     }
 
-    .ButtonHeartContainer{
-        width: 100%;
-        height: 7.2vh;
-        margin-left: 6%;
-        margin-right: 0;
+    .ButtonAddContainer {
+        font-size: 1.5rem;
     }
+
 }
