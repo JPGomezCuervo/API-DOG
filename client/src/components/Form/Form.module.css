@@ -501,7 +501,7 @@
 
 @media screen and (max-width: 414px) {
     .BigContainer {
-        margin-top: 12rem;
+        
         transform:  translate(-50%, -50%) scale(1);
         border: solid #FFE5D9;
         border-width: 1.5rem .5rem;
