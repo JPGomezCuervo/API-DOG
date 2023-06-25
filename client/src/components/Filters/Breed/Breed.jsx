@@ -84,7 +84,7 @@ const Breed = () => {
 
     return (
         
-        <>
+        <div className={style.Desktop}>
             <div className = {style.TotalButtonContainer} onClick={() => {dispatch(activeFilters({name: 'breed', value: {aToZ: false, zToA: false}}));}}>
                 <img 
                     className={breed.aToZ === true || breed.zToA === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={BreedIcon} alt="Breed" />
@@ -111,7 +111,7 @@ const Breed = () => {
                         
                 </li>
             </ul>
-        </>
+        </div>
     )
 };
 

@@ -79,35 +79,68 @@ const Weight = () => {
     }, [sortHeaviest, sortLightest, dispatch]);
 
     return (
-        
         <>
-            <div className = {style.TotalButtonContainer} onClick={ () => {dispatch(activeFilters({name: 'weight', value: {heavier: false, lighter: false}}));}}>
-                <img 
-                    className={weight.lighter === true || weight.heavier === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={weightIcon}
-                    alt="Weigth"/>
+            <div className={style.Desktop}>
+                <div className = {style.TotalButtonContainer} onClick={ () => {dispatch(activeFilters({name: 'weight', value: {heavier: false, lighter: false}}));}}>
+                    <img 
+                        className={weight.lighter === true || weight.heavier === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={weightIcon}
+                        alt="Weigth"/>
 
-                <h3 
-                    className={weight.lighter === true || weight.heavier === true? `${style.Description} ${style.EnableDescription}` : style.Description }>Weigth
-                </h3>
+                    <h3 
+                        className={weight.lighter === true || weight.heavier === true? `${style.Description} ${style.EnableDescription}` : style.Description }>Weigth
+                    </h3>
+                </div>
+
+                <ul className={style.Dropmenu}>
+                    <li className={weight.heavier === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>   
+                        <button className={style.Button} onClick={handleFilterClick} name={'SortHeaviest'}>
+                        <img className={style.OptionsImage} name={'SortHeaviest'} src={guideDogIcon} alt="" />
+                            Heaviest to lightest
+                        </button>
+
+                    </li>
+
+                        <li className={weight.lighter === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>
+                            <button className={style.Button} onClick={handleFilterClick} name={'SortLightest'}>
+                                <img className={style.OptionsImageSmallDog} name={'SortLightest'} src={smallDogIcon} alt="" />
+                                lightest to heaviest
+                            </button>
+                        </li>
+                </ul>
+                
             </div>
 
-            <ul className={style.Dropmenu}>
-                <li className={weight.heavier === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>   
-                    <button className={style.Button} onClick={handleFilterClick} name={'SortHeaviest'}>
-                    <img className={style.OptionsImage} name={'SortHeaviest'} src={guideDogIcon} alt="" />
-                        Heaviest to lightest
-                    </button>
+            <div className={style.Mobile}>
+                <div className = {style.TotalButtonContainer}>
+                    <img 
+                        className={weight.lighter === true || weight.heavier === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={weightIcon}
+                        alt="Weigth"/>
 
-                </li>
+                    <h3 
+                        className={weight.lighter === true || weight.heavier === true? `${style.Description} ${style.EnableDescription}` : style.Description }>Weigth
+                    </h3>
+                </div>
+
+                <ul className={style.Dropmenu}>
+                    <li className={weight.heavier === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>   
+                        <button className={style.Button} onClick={handleFilterClick} name={'SortHeaviest'}>
+                        <img className={style.OptionsImage} name={'SortHeaviest'} src={guideDogIcon} alt="" />
+                            Heaviest to lightest
+                        </button>
+
+                    </li>
 
                     <li className={weight.lighter === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>
                         <button className={style.Button} onClick={handleFilterClick} name={'SortLightest'}>
                             <img className={style.OptionsImageSmallDog} name={'SortLightest'} src={smallDogIcon} alt="" />
-                            lightest to heaviest
+                            Lightest to heaviest
                         </button>
                     </li>
-            </ul>
+
             
+                    <li onClick={ () => {dispatch(activeFilters({name: 'weight', value: {heavier: false, lighter: false}}));}}>Disable</li> 
+                </ul>
+            </div>
         </>
     );
 };
