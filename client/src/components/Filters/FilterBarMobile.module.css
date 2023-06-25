@@ -7,7 +7,7 @@
 
 .Container ul {
     margin: 0;
-    z-index: 99999;
+    z-index: 2;
 
 }
 
@@ -69,14 +69,14 @@ ul{
         flex-direction: column;
         justify-content: center;
         padding-top: 6rem;
+        height: 9vh;
     }
     .Order {
-        font-size: 1rem;
-        padding-left: 7%;
+        display: none;
     }
 
     .Filters {
-        transform: scale(.72);
+        transform: scale(.68);
         margin-top: 5rem;
     }
 }

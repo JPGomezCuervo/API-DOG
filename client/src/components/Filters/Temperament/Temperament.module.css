@@ -57,7 +57,6 @@ a{
 
 ul li:hover .Dropmenu{
     height: auto;
-    width: auto;
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
@@ -213,6 +212,32 @@ ul li:hover .Dropmenu{
     .Mobile {
         display: initial;
     }
+    .Mobile .Dropmenu {
+        display: initial;
+        width: fit-content;
+        left: 0;
+    }
+
+    .Mobile .TemperamentsContainer {
+        display: grid;
+        overflow-x: scroll;
+        width: 25rem;
+        gap: .7rem;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: repeat(14,1fr);
+    }
+    .Delete {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .Mobile ul li:hover .Dropmenu {
+        width: 25rem;
+        overflow-x: scroll;
+        left: 0;
+
+    }
+
     .Desktop {
         display: none;
     }

@@ -288,8 +288,8 @@ class FormBeta extends Component {
                                 )
                             })}
 
-                            <button  onClick={this.handleDeleteClick}>Delete</button>
                         </ul>
+                        <button className= {style.Delete} onClick={this.handleDeleteClick}>Delete</button>
                             {errors.temperaments && <p className={style.Error}>{errors.temperaments}</p>}
                     </div>
                     

@@ -21,7 +21,7 @@
     padding: 1rem;
     width: 10rem;
     position: absolute;
-    z-index: 99999;
+    /* z-index: 99999; */
     display: none;
     background-color: white;
     border: solid #9D8189 0.2rem;

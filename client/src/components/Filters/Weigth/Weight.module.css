@@ -7,7 +7,7 @@
     background-color: white;
     border: solid #9D8189 0.15rem;
     border-radius: .8rem;
-    z-index: 9999;
+    /* z-index: 9999; */
 }
 
 .FilterImage{

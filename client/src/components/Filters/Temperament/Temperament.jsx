@@ -117,6 +117,7 @@ const Temperament = () => {
                 </div>
 
                 <ul className={style.Dropmenu}>
+                    <div className={style.TemperamentsContainer}>
                     {temperaments.map((temperament, index) => {
                         return (
                             <li key={index}>
@@ -130,6 +131,9 @@ const Temperament = () => {
                             </li>
                         )
                     })}
+                    </div>
+                    <button className={style.Done} onClick={handleDoneClick}>filter</button>
+                    <button className={style.Delete} onClick={handleDeleteClick}>Delete</button>
                     {error !== null ? 
                         <div ref={buttonRef} className={`${style.Error} ${style.ErrorActive}` }>
                             <h1 className={style.ErrorTitle}>{error}</h1>
@@ -137,9 +141,8 @@ const Temperament = () => {
                             <button onClick={handleError}>Again</button>
                         </div>:
                         <div className={style.Error}>{error}</div>}
-                    <button className={style.Delete} onClick={handleDeleteClick}>Delete</button>
-                    <button className={style.Done} onClick={handleDoneClick}>filter</button>
                 </ul>
+
             </div>
         </>
     )

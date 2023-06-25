@@ -397,7 +397,7 @@
 }
 
 .Allow{
-    display: none;
+    visibility: hidden;
 }
 
 .SubmitContainer{
@@ -501,12 +501,11 @@
 
 @media screen and (max-width: 414px) {
     .BigContainer {
-        position: absolute;
-        top: 10vh;
-        left: 50%;
-        transform:  translate(-50%, -50%);
+        margin-top: 12rem;
+        transform:  translate(-50%, -50%) scale(1);
         border: solid #FFE5D9;
-        border-width: 1.5rem 0;
+        border-width: 1.5rem .5rem;
+        padding: 0 .3rem
     }
 
     .Image {
@@ -514,7 +513,9 @@
     }
 
     .Temperaments {
-        grid-template-columns: repeat(3,1fr)
+        width: 23.5rem;
+        overflow-x: scroll;
+        grid-template-columns: repeat(12,1fr)
         
     }
 
@@ -583,7 +584,7 @@
 
     .Search {
         width: 9rem;
-        margin-right: 3rem;
+        margin-right: 3.7rem;
     }
 
     .Search label {
@@ -624,7 +625,7 @@
     .Error {
         padding: 0;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .BreedContainer p {
@@ -638,7 +639,55 @@
     }
 
     .Extra {
-        margin-top: 475vh;
+        margin-top: 258vh;
+    }
+
+    .ErrorLast {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .SubmitContainer {
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .Submit, .Submit:disabled {
+        font-size: 1rem;
+        width: 10rem;
+        height: 2.5rem;
+        display: block;
+        margin: auto 0;
+    }
+    .Submit {
+        display: block;
+        margin: auto 0;
+        font-size: 1rem;
+        width: 10rem;
+        height: 2.5rem;
+        border-radius: .6rem;
+    }
+
+    .LockContainer {
+        margin-right: 3rem;
+    }
+
+    .Delete {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .PadLock {
+        margin: auto 0;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+    }
+    .PadLock:hover {
+        width: 2.2rem;
+        height: 2.2rem;
     }
     
 }
