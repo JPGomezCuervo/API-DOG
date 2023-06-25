@@ -111,6 +111,23 @@ ul li:hover .Dropmenu{
     border-radius: .4em;
 }
 
+.Mobile {
+    display: none;
+}
+
+.Mobile li {
+    font-family: "Montserrat-ExtraBold";
+    font-weight: 100;
+    color: #9D8189;
+    text-align: center;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.Mobile li:hover {
+    color: #5b4a4f;;
+}
+
 @media screen and (max-width: 1280px) {
     .FilterImage.EnableImg{
         border: #9D8189 .17rem solid;
@@ -119,5 +136,14 @@ ul li:hover .Dropmenu{
 
     .Description.EnableDescription{
         border-bottom: #9D8189 .17rem solid;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Mobile {
+        display: initial;
+    }
+    .Desktop {
+        display: none;
     }
 }

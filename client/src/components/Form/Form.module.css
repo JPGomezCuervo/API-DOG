@@ -502,9 +502,11 @@
 @media screen and (max-width: 414px) {
     .BigContainer {
         position: absolute;
-        top: 250%;
+        top: 10vh;
         left: 50%;
         transform:  translate(-50%, -50%);
+        border: solid #FFE5D9;
+        border-width: 1.5rem 0;
     }
 
     .Image {

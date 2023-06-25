@@ -83,35 +83,69 @@ const Breed = () => {
     }, [sortFromA, sortFromZ, dispatch]);
 
     return (
-        
-        <div className={style.Desktop}>
-            <div className = {style.TotalButtonContainer} onClick={() => {dispatch(activeFilters({name: 'breed', value: {aToZ: false, zToA: false}}));}}>
-                <img 
-                    className={breed.aToZ === true || breed.zToA === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={BreedIcon} alt="Breed" />
-                <h3 
-                    className={breed.aToZ === true || breed.zToA === true ? `${style.Description} ${style.EnableDescription}` : style.Description }>Breed
-                </h3>
-            </div>
-            <ul className={style.Dropmenu}>
-                <li className={breed.aToZ === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>
-                        
-                            <button className={style.Button} name={'SortFromA'} onClick={handleFilterClick}> 
-                                <img className={style.PawIconUp} src={PawIcon} alt="" name={'SortFromA'}/>
-                                A-Z 
-                            </button>
-                        
-                </li>
 
-                <li className={breed.zToA === true ? `${style.ListOption2} ${style.Pressed}` : style.ListOption2}>
-                        
-                            <button className={style.Button} name={'SortFromZ'} onClick={handleFilterClick}>
-                                <img className={style.PawIconDown} src={PawIcon} alt="" name={'SortFromZ'}/>
-                                Z-A
-                            </button>
-                        
-                </li>
-            </ul>
-        </div>
+        <>
+            <div className={style.Desktop}>
+                <div className = {style.TotalButtonContainer} onClick={() => {dispatch(activeFilters({name: 'breed', value: {aToZ: false, zToA: false}}));}}>
+                    <img 
+                        className={breed.aToZ === true || breed.zToA === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={BreedIcon} alt="Breed" />
+                    <h3 
+                        className={breed.aToZ === true || breed.zToA === true ? `${style.Description} ${style.EnableDescription}` : style.Description }>Breed
+                    </h3>
+                </div>
+                <ul className={style.Dropmenu}>
+                    <li className={breed.aToZ === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>
+                            
+                                <button className={style.Button} name={'SortFromA'} onClick={handleFilterClick}> 
+                                    <img className={style.PawIconUp} src={PawIcon} alt="" name={'SortFromA'}/>
+                                    A-Z 
+                                </button>
+                            
+                    </li>
+
+                    <li className={breed.zToA === true ? `${style.ListOption2} ${style.Pressed}` : style.ListOption2}>
+                            
+                                <button className={style.Button} name={'SortFromZ'} onClick={handleFilterClick}>
+                                    <img className={style.PawIconDown} src={PawIcon} alt="" name={'SortFromZ'}/>
+                                    Z-A
+                                </button>
+                            
+                    </li>
+                </ul>
+            </div>
+
+            <div className={style.Mobile}>
+                
+                <div className = {style.TotalButtonContainer}>
+                    <img 
+                        className={breed.aToZ === true || breed.zToA === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={BreedIcon} alt="Breed" />
+                    <h3 
+                        className={breed.aToZ === true || breed.zToA === true ? `${style.Description} ${style.EnableDescription}` : style.Description }>Breed
+                    </h3>
+                </div>
+                <ul className={style.Dropmenu}>
+                    <li className={breed.aToZ === true ? `${style.ListOption} ${style.Pressed}` : style.ListOption}>
+                            
+                                <button className={style.Button} name={'SortFromA'} onClick={handleFilterClick}> 
+                                    <img className={style.PawIconUp} src={PawIcon} alt="" name={'SortFromA'}/>
+                                    A-Z 
+                                </button>
+                            
+                    </li>
+
+                    <li className={breed.zToA === true ? `${style.ListOption2} ${style.Pressed}` : style.ListOption2}>
+                            
+                                <button className={style.Button} name={'SortFromZ'} onClick={handleFilterClick}>
+                                    <img className={style.PawIconDown} src={PawIcon} alt="" name={'SortFromZ'}/>
+                                    Z-A
+                                </button>
+                            
+                    </li>
+                    <li onClick={() => {dispatch(activeFilters({name: 'breed', value: {aToZ: false, zToA: false}}));}}>Disable</li> 
+
+                </ul>
+            </div>
+        </>
     )
 };
 
