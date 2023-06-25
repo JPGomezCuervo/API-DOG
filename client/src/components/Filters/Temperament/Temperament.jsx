@@ -67,41 +67,81 @@ const Temperament = () => {
     }, [dispatch])
 
     return (
-        
         <>
-            <div className = {style.TotalButtonContainer} onClick={() => { dispatch(activeFilters({ name: 'temperament', value: false  }));  dispatch(setSelectedTemperaments([])); dispatch(clearDogs())}}>
-                <img 
-                    className={filters.temperament === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={icon} alt='Temperament Icon'/>
-                <h3 
-                    className={filters.temperament === true ? `${style.Description} ${style.EnableDescription}` : style.Description }>Temperament
-                </h3>
+            <div className={style.Desktop}>
+                <div className = {style.TotalButtonContainer} onClick={() => { dispatch(activeFilters({ name: 'temperament', value: false  }));  dispatch(setSelectedTemperaments([])); dispatch(clearDogs())}}>
+                    <img 
+                        className={filters.temperament === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={icon} alt='Temperament Icon'/>
+                    <h3 
+                        className={filters.temperament === true ? `${style.Description} ${style.EnableDescription}` : style.Description }>Temperament
+                    </h3>
+                </div>
+
+                <ul className={style.Dropmenu}>
+                    {temperaments.map((temperament, index) => {
+                        return (
+                            <li key={index}>
+                                <button 
+                                className={selectedTemperaments.includes(temperament.name) ? `${style.Button} ${style.active}` : style.Button} 
+                                key={temperament.id} 
+                                name={temperament.name} 
+                                onClick={handleFilterClick}>
+                                    {temperament.name}
+                                </button>
+                            </li>
+                        )
+                    })}
+                    {error !== null ? 
+                        <div ref={buttonRef} className={`${style.Error} ${style.ErrorActive}` }>
+                            <h1 className={style.ErrorTitle}>{error}</h1>
+                            <img className={style.Remove} src={removeIcon} alt=""/>
+                            <button onClick={handleError}>Again</button>
+                        </div>:
+                        <div className={style.Error}>{error}</div>}
+                    <button className={style.Delete} onClick={handleDeleteClick}>Delete</button>
+                    <button className={style.Done} onClick={handleDoneClick}>filter</button>
+                </ul>
             </div>
 
-            <ul className={style.Dropmenu}>
-                {temperaments.map((temperament, index) => {
-                    return (
-                        <li key={index}>
-                            <button 
-                            className={selectedTemperaments.includes(temperament.name) ? `${style.Button} ${style.active}` : style.Button} 
-                            key={temperament.id} 
-                            name={temperament.name} 
-                            onClick={handleFilterClick}>
-                                {temperament.name}
-                            </button>
-                        </li>
-                    )
-                })}
-                {error !== null ? 
-                    <div ref={buttonRef} className={`${style.Error} ${style.ErrorActive}` }>
-                        <h1 className={style.ErrorTitle}>{error}</h1>
-                        <img className={style.Remove} src={removeIcon} alt=""/>
-                        <button onClick={handleError}>Again</button>
-                    </div>:
-                    <div className={style.Error}>{error}</div>}
-                <button className={style.Delete} onClick={handleDeleteClick}>Delete</button>
-                <button className={style.Done} onClick={handleDoneClick}>filter</button>
-            </ul>
-            </>
+            <div className={style.Mobile}>
+
+            {/* onClick={() => { dispatch(activeFilters({ name: 'temperament', value: false  }));  dispatch(setSelectedTemperaments([])); dispatch(clearDogs())}}
+            para despues por si las moscas */}
+            
+            <div className = {style.TotalButtonContainer}>
+                    <img 
+                        className={filters.temperament === true ? `${style.FilterImage} ${style.EnableImg}`: style.FilterImage} src={icon} alt='Temperament Icon'/>
+                    <h3 
+                        className={filters.temperament === true ? `${style.Description} ${style.EnableDescription}` : style.Description }>Temperament
+                    </h3>
+                </div>
+
+                <ul className={style.Dropmenu}>
+                    {temperaments.map((temperament, index) => {
+                        return (
+                            <li key={index}>
+                                <button 
+                                className={selectedTemperaments.includes(temperament.name) ? `${style.Button} ${style.active}` : style.Button} 
+                                key={temperament.id} 
+                                name={temperament.name} 
+                                onClick={handleFilterClick}>
+                                    {temperament.name}
+                                </button>
+                            </li>
+                        )
+                    })}
+                    {error !== null ? 
+                        <div ref={buttonRef} className={`${style.Error} ${style.ErrorActive}` }>
+                            <h1 className={style.ErrorTitle}>{error}</h1>
+                            <img className={style.Remove} src={removeIcon} alt=""/>
+                            <button onClick={handleError}>Again</button>
+                        </div>:
+                        <div className={style.Error}>{error}</div>}
+                    <button className={style.Delete} onClick={handleDeleteClick}>Delete</button>
+                    <button className={style.Done} onClick={handleDoneClick}>filter</button>
+                </ul>
+            </div>
+        </>
     )
 };
 
