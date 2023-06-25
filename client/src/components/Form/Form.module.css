@@ -502,9 +502,14 @@
 @media screen and (max-width: 414px) {
     .BigContainer {
         position: absolute;
-        top: 200%;
+        top: 250%;
         left: 50%;
-        transform:  translate(-50%, -50%) 
+        transform:  translate(-50%, -50%);
+        background-color: white;
+    }
+
+    .Image {
+        display: none;
     }
 
     .Temperaments {
@@ -527,14 +532,66 @@
         height: 3rem;
         width: 2.7rem;
         font-size: 1.1rem;
+        display: inline;
     }
-    .AttributeContainer {
-
+    .InputContainer {
+        margin: 0;
+        padding: 0;
+        display: initial;
+        width: 5rem;
+    }
+    .Measure {
+        display: none;
     }
 
-    .Image {
+    .InputContainer input {
+        padding-left: 0;
+        display: inline;
+    }
+
+    .ImageBreed {
+        display: none;
+    }
+    .ContainerTop {
+        gap: 0;
+        padding: 0;
+    }
+
+    .BreedContainer {
+        width: fit-content;
+    }
+
+    .BreedContainer input, .BreedContainer2 input{
+        border: .1rem solid #9D8189;
+        display: block;
         height: 3rem;
-        width: 3rem;
+        width: 7rem;
+        font-size: 1.2rem;
+        padding: 0;
     }
+
+    .BreedContainer label, .BreedContainer2 label{
+        font-size: 1.2rem;
+        width: 7rem;
+        display: block;
+        font-family: 'Montserrat-Medium';
+        color: white;
+        text-align: center;
+        background-color: #9D8189;
+        border-radius: .9rem .9rem 0 0;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .Search {
+        width: 7rem;
+    }
+
+    .BigTitle {
+        display: block;
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+    
 }
 

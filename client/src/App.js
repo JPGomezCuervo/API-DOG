@@ -4,6 +4,7 @@ import HomePage from './components/HomePage/HomePage';
 import DetailCard from './components/DetailCard/DetailCard';
 import FormBeta from './components/Form/FormBeta';
 import LandingPage from './components/LandingPage/LandingPage';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         <Route path= '/form' element={<FormBeta/>} />
         <Route path='/' element={<LandingPage/>} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
