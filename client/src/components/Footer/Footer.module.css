@@ -1,0 +1,78 @@
+.Footer {
+    background-color: #ffe5d9;
+    margin-top: 2rem;
+    padding-bottom: 1vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Footer h2 {
+    display: inline-block;
+    font-family: "Montserrat-Light";
+    font-size: .8rem;
+    color: #787878;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    opacity: .8;
+}
+
+.LogosContainer {
+    display: flex;
+    padding-top: 1vh;
+    margin-bottom: .5vh;
+}
+
+.LogosContainer img {
+    height: 2.3rem;
+    margin-left: 2%;
+}
+
+.LogosContainer img:hover {
+    cursor: pointer;
+}
+
+.LogosContainer a {
+    margin-left: 1%;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: .2rem solid #9D8189;
+    border-radius: .1rem;
+    padding-top: 1rem;
+
+}
+
+.Container li {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-family: "Montserrat-Medium";
+    color: #9D8189;
+}
+
+.Container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.Container h3 {
+    width: 100%;
+    font-family: "Montserrat-Bold";
+}
+
+.Container ul li:hover{
+    color: #5b4a4f;
+}
+
+@media screen and (max-width: 414px) {
+    
+    .Container {
+        display: block;
+    }
+    .Container div {
+        margin-bottom: 7vh;
+        margin-top: 2vh;
+    }
+}
