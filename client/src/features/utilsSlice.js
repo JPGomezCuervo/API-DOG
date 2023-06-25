@@ -13,7 +13,8 @@ const utilsSlice = createSlice({
         setCurrentPage: (state, action) => {
             state.currentPage = action.payload;
         },
-        setNextPage: (state) => {
+        setNextPage: (state, {payload}) => {
+            if (state.currentPage === payload) return;
             state.currentPage = state.currentPage + 1
         },
 

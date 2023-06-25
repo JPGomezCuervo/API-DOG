@@ -4,19 +4,23 @@ import { setCurrentPage, setNextPage, setPrevPage } from '../../features/utilsSl
 
 const Pagination = ({totalDogs, dogsPerPage, currentPage}) => {
     const dispatch = useDispatch();
-    
+    const lastPage = Math.ceil(totalDogs / dogsPerPage);
     const pages = [];
-    for (let i = 1 ; i <= Math.ceil(totalDogs / dogsPerPage) ; i++) {
-        if(i === 1 || i === Math.ceil(totalDogs / dogsPerPage) || (i >= currentPage - 2 && i <= currentPage + 2)
+    for (let i = 1 ; i <= lastPage; i++) {
+        if (i === Math.ceil(totalDogs / dogsPerPage)) {
+            pages.push(i);
+            break;
+        }
+        if(i === 1 || i === lastPage|| (i >= currentPage - 2 && i <= currentPage + 2)
         ) pages.push(i);
-
         if ( currentPage < 5 && i > 1 && i < 7 && !pages.includes(i)) pages.push(i);
+
     }
 
     const handleNextClick = () => {
         if(pages.length -1 !== currentPage - 1){
             window.scrollTo({top: 0, left:0, behavior: 'smooth'})
-            dispatch(setNextPage())
+            dispatch(setNextPage(lastPage))
         }
     }
 
