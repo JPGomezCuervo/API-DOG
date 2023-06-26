@@ -334,6 +334,10 @@
 
 }
 
+.Movile {
+    display: none;
+}
+
 .Temperaments{
     margin: 0;
     padding: 0;
@@ -491,18 +495,28 @@
 @media screen and (max-width: 1366px) {
     .BigContainer {
         position: absolute;
-        top: 100%;
+        top: -17rem;
         left: 50%;
-        transform:  translate(-50%, -50%) scale(0.7)
+        transform:  translateX(-50%) scale(0.7)
+    }
+
+    .Extra {
+        margin-top: 90rem
     }
 
     
 }
 
 @media screen and (max-width: 414px) {
+    .Movile {
+        display: initial;
+    }
+    
     .BigContainer {
-        
-        transform:  translate(-50%, -50%) scale(1);
+        margin-top: 3rem;
+        transform: translateX(-50%) scale(1);
+        top: 0;
+        left: 50%;
         border: solid #FFE5D9;
         border-width: 1.5rem .5rem;
         padding: 0 .3rem
@@ -639,7 +653,7 @@
     }
 
     .Extra {
-        margin-top: 258vh;
+        margin-top: 110rem;
     }
 
     .ErrorLast {
