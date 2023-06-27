@@ -6,4 +6,5 @@ Doggo Finder es una página web diseñada para explorar, encontrar y aprender so
 # Tecnologías
 
 "frontEnd":["React", "Redux", "CSS" ]
+
 "backEnd": ["Express","PostgreSQL", "Sequelize"]
